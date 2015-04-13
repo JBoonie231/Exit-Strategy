@@ -12,13 +12,14 @@ public class SplineWalker : MonoBehaviour {
 
 	public SplineWalkerMode mode;
 
-	private float progress;
+	public float progress;
 	private bool goingForward = true;
 
 	private void Update () {
 		if (!pause) {
 			if (goingForward) {
 				progress += Time.deltaTime / duration;
+
 				if (progress > 1f) {
 					if (mode == SplineWalkerMode.Once) {
 						progress = 1f;

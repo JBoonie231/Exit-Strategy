@@ -155,7 +155,7 @@ public class BezierSpline : MonoBehaviour {
 			i = (int)t;
 			t -= i;
 			i *= 3;
-		}
+		} 
 		return transform.TransformPoint(Bezier.GetFirstDerivative(points[i], points[i + 1], points[i + 2], points[i + 3], t)) - transform.position;
 	}
 	
