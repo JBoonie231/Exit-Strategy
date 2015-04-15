@@ -4,8 +4,8 @@ using System.Collections;
 public class BulletCollide : MonoBehaviour 
 {
 
-	public float Velocity = .5; 
-	public float SecToDest = 15;
+	public float Velocity = .5f; 
+	public float SecToDest = 15f;
 	private float startTime; 
 
 	// Use this for initialization
