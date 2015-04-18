@@ -7,7 +7,8 @@ public class FollowMotionPath : MonoBehaviour
 	public float startPosition;
 	public float speed;										// Realworld units per second you want your object to travel
 	public bool loop;
-	public bool pause;
+	public bool pause = false;
+	private RailSwitcher railSwitcher;
 	float uv;
 	
 	void Start()
@@ -35,11 +36,18 @@ public class FollowMotionPath : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider other){
+		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.tag == "stopPoint") {
 			pause = true;
 			Destroy (other.gameObject);
 			Debug.Log ("STOP POINT DETECTED");
-		}		
+		}	
+		else if (other.gameObject.tag == "Change Rail") {
+			railSwitcher = other.gameObject.GetComponent<RailSwitcher>();
+			motionPath = railSwitcher.motionPath;
+			uv = 0;
+			Debug.Log ("Rail change detected");
+		}
 	} 
 }
 	

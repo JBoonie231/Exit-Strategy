@@ -48,4 +48,9 @@ public class BulletCollide : MonoBehaviour
 	
 	}// end void update
 
+	void OnCollisionEnter(Collision other)
+	{
+		Destroy (this.gameObject);
+	}
+
 }// end public Class BulletCollide
