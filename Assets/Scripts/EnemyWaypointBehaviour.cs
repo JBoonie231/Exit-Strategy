@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyWaypointBehaviour : MonoBehaviour 
 {
+	public GameObject[] waypoints;
+
 	public bool cover;
 	public bool hostile;
 	public bool idle;
