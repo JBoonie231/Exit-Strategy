@@ -8,6 +8,7 @@ public class EnemyWaypointBehaviour : MonoBehaviour
 	public bool cover;
 	public bool hostile;
 	public bool idle;
+	public bool occupied;
 
 	// Use this for initialization
 	void Start () 

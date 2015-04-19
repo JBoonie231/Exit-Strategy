@@ -4,17 +4,22 @@ using System.Collections;
 public class AlienSoldierBehaviour : MonoBehaviour 
 {
 	public GameObject target;
+	public GameObject weapon;
+
 	NavMeshAgent agent;
 
 	GameObject player;
+	GameObject tempWaypoint;
 
-	public GameObject weapon;
 	float health;
 
 	enum TopState {Idle, Engage, Flee, Die};
 	enum IdleState {Standing, Walking, Talking};
 	enum EngageState {Waiting, Move, Shooting, Cover, Moving};
 
+	bool waiting;
+	float waitTime;
+	float waitCooldown = 3f;
 
 	TopState topState;
 	IdleState idleState;
@@ -34,89 +39,181 @@ public class AlienSoldierBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		FSM ();
+	}
+
+	// Finite State Machine for Alien Soldier Behaviour
+	void FSM()
+	{
 		switch (topState)
 		{
-			case TopState.Idle:
-				switch (idleState)
-				{
-					case IdleState.Standing:
-						break;
-					
-					case IdleState.Talking:
-						break;
-
-					case IdleState.Walking:
-						break;
-				}
+		case TopState.Idle:
+			switch (idleState)
+			{
+			case IdleState.Standing:
+				Standing ();
 				break;
-
-			case TopState.Engage:
-				switch (engageState)
-				{
-					case EngageState.Cover:
-						if(!target.GetComponent<EnemyWaypointBehaviour>().cover)
-						{
-							//engageState = (int)Random.Range(EngageState.Cover, EngageState.Waiting);
-						}
-						else
-						{
-							// Get into cover position and wait a certain amount of time
-							//engageState = (int)Random.Range(EngageState.Cover, EngageState.Waiting);
-						}
-				engageState = EngageState.Shooting;
-						break;
-					
-					case EngageState.Move:
-						if(target == null || target.GetComponent<EnemyWaypointBehaviour>().waypoints.Length == 0)
-						{
-							//engageState = (int)Random.Range(EngageState.Cover, EngageState.Waiting);
-					engageState = EngageState.Shooting;
-						}
-						else
-						{
-							target = target.GetComponent<EnemyWaypointBehaviour>().waypoints[Random.Range(0, target.GetComponent<EnemyWaypointBehaviour>().waypoints.Length)];
-							agent.SetDestination(target.transform.position);
-							engageState = EngageState.Moving;
-						}
-						break;
-
-					case EngageState.Moving:
-						if(transform.position == target.transform.position)
-						{
-							int damping = 2;
-							
-							Vector3 lookPos = player.transform.position - transform.position;
-							lookPos.y = 0;
-							Quaternion rotation = Quaternion.LookRotation(lookPos);
-							transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
-							engageState = EngageState.Cover;
-						}
-						break;
-					
-					case EngageState.Shooting:
-						// Shoot a volley towards the player
-						//engageState = (int)Random.Range(EngageState.Cover, EngageState.Waiting);
-				engageState = EngageState.Waiting;
-						break;
-
-					case EngageState.Waiting:
-						// Wait a certain amount of time
-				//engageState = EngageState[(int)Random.Range(0f, 3f)];
-				engageState = EngageState.Move;
-						break;
-				}
+				
+			case IdleState.Talking:
+				Talking ();
 				break;
-
-			case TopState.Flee:
+				
+			case IdleState.Walking:
+				Walking ();
 				break;
-
-			case TopState.Die:
-				GameObject.Destroy(gameObject);
+			}
+			break;
+			
+		case TopState.Engage:
+			switch (engageState)
+			{
+			case EngageState.Cover:
+				Cover ();
 				break;
-
-			default:
+				
+			case EngageState.Move:
+				Move ();
 				break;
+				
+			case EngageState.Moving:
+				Moving ();
+				break;
+				
+			case EngageState.Shooting:
+				Shooting ();
+				break;
+				
+			case EngageState.Waiting:
+				Waiting ();
+				break;
+			}
+			break;
+			
+		case TopState.Flee:
+			Flee ();
+			break;
+			
+		case TopState.Die:
+			Die ();
+			break;
+			
+		default:
+			break;
 		}
+	}
+
+	// State Functions
+
+	void Flee()
+	{
+		
+	}
+
+	void Die()
+	{
+		GameObject.Destroy(gameObject);
+	}
+	
+	void Standing()
+	{
+		
+	}
+	
+	void Walking()
+	{
+		
+	}
+	
+	void Talking()
+	{
+		
+	}
+	
+	void Waiting()
+	{
+		if(!waiting)
+		{
+			waiting = true;
+			waitTime = Time.time + waitCooldown;
+		}
+
+		LookAtPlayer();
+
+		//StartCoroutine(Wait(3f));
+		if(Time.time > waitTime)
+		{
+			waiting = false;
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
+	}
+	
+	void Move()
+	{
+		if(target == null || target.GetComponent<EnemyWaypointBehaviour>().waypoints.Length == 0)
+		{
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
+		else
+		{
+			tempWaypoint = target.GetComponent<EnemyWaypointBehaviour>().waypoints[Random.Range(0, target.GetComponent<EnemyWaypointBehaviour>().waypoints.Length)];
+			if(!tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied)
+			{
+				tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied = true;
+				target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
+
+				target = tempWaypoint;
+				agent.SetDestination(target.transform.position);
+				engageState = EngageState.Moving;
+			}
+			else
+			{
+				engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+			}
+		}
+	}
+
+	void Shooting()
+	{
+		LookAtPlayer();
+
+		// Shoot a volley towards the player
+		engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+	}
+
+	void Cover()
+	{
+		LookAtPlayer();
+
+		if(target.GetComponent<EnemyWaypointBehaviour>().cover)
+		{
+			// Get into cover position and wait a certain amount of time
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
+		else
+		{
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
+	}
+
+	void Moving()
+	{
+		if(!agent.pathPending && agent.remainingDistance == 0)
+		{
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
+	}
+
+	void LookAtPlayer()
+	{
+		int damping = 2;
+		
+		//Vector3 lookPos = player.transform.position - GetComponentInParent<Transform>().position;
+		Vector3 lookPos = player.transform.position - transform.parent.position;
+
+		lookPos.y = 90;
+		Quaternion rotation = Quaternion.LookRotation(lookPos);
+		//GetComponentInParent<Transform>().rotation = Quaternion.Slerp(GetComponentInParent<Transform>().rotation, rotation, Time.deltaTime * damping);
+		transform.parent.rotation = Quaternion.Slerp(transform.parent.rotation, rotation, Time.deltaTime * damping);
 	}
 
 	public void TakeDamage(float amount)
@@ -129,4 +226,12 @@ public class AlienSoldierBehaviour : MonoBehaviour
 			topState = TopState.Die;
 		}
 	}
+
+	//IEnumerator Wait(float sec)
+	//{
+		//waiting = true;
+		//yield return new WaitForSeconds(sec);
+		//engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		//waiting = false;
+	//}
 }

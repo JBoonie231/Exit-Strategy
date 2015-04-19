@@ -7,6 +7,7 @@ public class SpawnerBehaviour : MonoBehaviour
 	public GameObject[] waypoints;
 	public int numberOfSpawns;
 	GameObject spawneeClone;
+	GameObject tempWaypoint;
 
 	public bool enabled;
 	public float cooldown;
@@ -42,14 +43,23 @@ public class SpawnerBehaviour : MonoBehaviour
 
 	IEnumerator Spawn()
 	{
-		spawnable = false;
-
-		spawneeClone = Instantiate(spawnee);
 		if(waypoints.Length != 0)
 		{
-			spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = waypoints[Random.Range(0, waypoints.Length - 1)];
+			tempWaypoint = waypoints[Random.Range(0, waypoints.Length)];
+			if(!tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied)
+			{
+				tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied = true;
+				spawnable = false;
+
+				spawneeClone = Instantiate(spawnee);
+				spawneeClone.transform.position = transform.position;
+				spawneeClone.transform.rotation = transform.rotation;
+			
+				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = tempWaypoint;
+
+				yield return new WaitForSeconds(cooldown);
+				spawnable = true;
+			}
 		}
-		yield return new WaitForSeconds(cooldown);
-		spawnable = true;
 	}
 }
