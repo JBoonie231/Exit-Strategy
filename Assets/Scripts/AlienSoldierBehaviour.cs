@@ -111,6 +111,8 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	void Die()
 	{
+		if(target != null)
+			target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
 		GameObject.Destroy(gameObject);
 	}
 	
