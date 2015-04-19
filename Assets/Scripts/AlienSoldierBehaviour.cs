@@ -33,7 +33,7 @@ public class AlienSoldierBehaviour : MonoBehaviour
 		topState = TopState.Engage;
 		engageState = EngageState.Moving;
 		agent = GetComponentInParent<NavMeshAgent>();
-		agent.SetDestination(target.transform.position);
+		//agent.SetDestination(target.transform.position);
 	}
 	
 	// Update is called once per frame
@@ -197,9 +197,18 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	void Moving()
 	{
-		if(!agent.pathPending && agent.remainingDistance == 0)
+		if(agent.enabled)
 		{
-			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+			if(!agent.pathPending && agent.remainingDistance == 0)
+			{
+				engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+			}
+		}
+		// Fix for the navmesh spawn error
+		else
+		{
+			agent.enabled = true;
+			agent.SetDestination(target.transform.position);
 		}
 	}
 
