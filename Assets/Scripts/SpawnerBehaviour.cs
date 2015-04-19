@@ -5,7 +5,7 @@ public class SpawnerBehaviour : MonoBehaviour
 {
 	public GameObject spawnee;
 	public GameObject[] waypoints;
-
+	public int numberOfSpawns;
 	GameObject spawneeClone;
 
 	public bool enabled;
@@ -24,7 +24,10 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(enabled && spawnable)
 		{
-			StartCoroutine("Spawn");
+			if(numberOfSpawns > 0){
+				StartCoroutine("Spawn");
+				numberOfSpawns--;
+			}
 		}
 	}
 

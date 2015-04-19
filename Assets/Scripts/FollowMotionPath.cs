@@ -8,7 +8,8 @@ public class FollowMotionPath : MonoBehaviour
 	public float speed;										// Realworld units per second you want your object to travel
 	public bool loop;
 	public bool pause = false;
-	private RailSwitcher railSwitcher;
+	private Triggers trigger;
+	private SpawnerBehaviour spawner;
 	float uv;
 	
 	void Start()
@@ -39,12 +40,31 @@ public class FollowMotionPath : MonoBehaviour
 		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.tag == "stopPoint") {
 			pause = true;
-			Destroy (other.gameObject);
 			Debug.Log ("STOP POINT DETECTED");
+			Debug.Log ("Spawning enemies");
+			trigger = other.gameObject.GetComponent<Triggers>();
+			if( trigger.spawner1 != null){
+				trigger.spawner1.enabled = true;
+			}
+			if( trigger.spawner2 != null){
+				trigger.spawner2.enabled = true;
+			}
+			if( trigger.spawner3 != null){
+				trigger.spawner3.enabled = true;
+			}
+			if( trigger.spawner4 != null){
+				trigger.spawner4.enabled = true;
+			}
+			if( trigger.spawner5 != null){
+				trigger.spawner5.enabled = true;
+			}
+
+			Destroy (other.gameObject);
+
 		}	
 		else if (other.gameObject.tag == "Change Rail") {
-			railSwitcher = other.gameObject.GetComponent<RailSwitcher>();
-			motionPath = railSwitcher.motionPath;
+			trigger = other.gameObject.GetComponent<Triggers>();
+			motionPath = trigger.motionPath;
 			uv = 0;
 			Debug.Log ("Rail change detected");
 		}
