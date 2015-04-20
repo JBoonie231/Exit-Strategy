@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - stopPoint
   - Change Rail
+  - Movement Controller
   layers:
   - Default
   - TransparentFX

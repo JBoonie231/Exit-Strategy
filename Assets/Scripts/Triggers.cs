@@ -1,8 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Triggers : MonoBehaviour {
 	public MotionPath motionPath;
+
+	public bool timer;
+	public bool kills;
+
+	public float howLong;
+	public int numberOfKills;
+
 	public SpawnerBehaviour spawner1;
 	public SpawnerBehaviour spawner2;
 	public SpawnerBehaviour spawner3;

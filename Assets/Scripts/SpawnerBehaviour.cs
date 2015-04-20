@@ -5,7 +5,7 @@ public class SpawnerBehaviour : MonoBehaviour
 {
 	public GameObject spawnee;
 	public GameObject[] waypoints;
-	public int numberOfSpawns;
+	//public int numberOfSpawns;
 	GameObject spawneeClone;
 	GameObject tempWaypoint;
 
@@ -37,10 +37,10 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(spawnable)
 		{
-			if(numberOfSpawns > 0){
+			//if(numberOfSpawns > 0){
 				StartCoroutine("Spawn");
-				numberOfSpawns--;
-			}
+				//numberOfSpawns--;
+			//}
 		}
 	}
 
@@ -58,7 +58,7 @@ public class SpawnerBehaviour : MonoBehaviour
 			
 				spawneeClone.transform.position = transform.position;
 				spawneeClone.transform.rotation = transform.rotation;
-				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().tag = "Enemy";
+				//spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().tag = "Enemy";
 				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = tempWaypoint;
 
 				yield return new WaitForSeconds(cooldown);

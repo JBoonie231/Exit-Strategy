@@ -13,6 +13,7 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	GameObject player;
 	GameObject tempWaypoint;
+	GameController gameController;
 
 	enum TopState {Idle, Engage, Flee, Die};
 	enum IdleState {Standing, Walking, Talking};
@@ -32,6 +33,7 @@ public class AlienSoldierBehaviour : MonoBehaviour
 	void Start () 
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
+		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 
 		topState = TopState.Engage;
 		engageState = EngageState.Moving;
@@ -116,6 +118,8 @@ public class AlienSoldierBehaviour : MonoBehaviour
 	{
 		if(target != null)
 			target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
+		gameController.kills++;
+		gameController.tempKillCount++;
 		GameObject.Destroy(gameObject);
 	}
 	

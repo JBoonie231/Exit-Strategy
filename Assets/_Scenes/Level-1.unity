@@ -219,7 +219,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1210396590}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &27661376
@@ -385,7 +384,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!54 &61044099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -407,7 +406,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 61044097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -456,6 +455,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 946645940}
   spawner2: {fileID: 1289033950}
   spawner3: {fileID: 1688403733}
@@ -568,7 +571,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2041452046}
   - {fileID: 1907981500}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1001 &105899748
@@ -1444,7 +1446,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!54 &203547321
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1466,7 +1468,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203547319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -1515,6 +1517,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 1151160376}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -1682,7 +1688,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!54 &235606508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1704,7 +1710,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235606506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -1753,6 +1759,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 6
   spawner1: {fileID: 1258523910}
   spawner2: {fileID: 92624672}
   spawner3: {fileID: 0}
@@ -1895,7 +1905,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1844703653}
   - {fileID: 235737516}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!4 &284135594
@@ -1955,7 +1964,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 628114502}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1001 &301927298
@@ -2846,7 +2854,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1179529329}
-  numberOfSpawns: 1
   enabled: 0
   cooldown: 5
 --- !u!4 &371802350
@@ -2905,7 +2912,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 27661376}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &373776277
@@ -3395,7 +3401,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 2045505369}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &428481228
@@ -3926,7 +3931,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 54756861}
   - {fileID: 700979870}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &501315797
@@ -4757,7 +4761,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2010871658}
   - {fileID: 536270155}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1001 &650250536
@@ -4998,7 +5001,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &675237560 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
@@ -5699,7 +5702,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 846819457}
   - {fileID: 1486362270}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 2
 --- !u!1 &729065739
@@ -5885,7 +5887,7 @@ Transform:
   - {fileID: 1540206317}
   - {fileID: 1730993342}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &771598987
 GameObject:
   m_ObjectHideFlags: 0
@@ -6354,7 +6356,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1916350318}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &831802085
@@ -6430,7 +6431,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &831802090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6443,6 +6444,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 1159385857}
+  timer: 0
+  kills: 0
+  howLong: 0
+  numberOfKills: 0
   spawner1: {fileID: 0}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -6696,7 +6701,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 900941897}
   - {fileID: 401539706}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1001 &860884085
@@ -6848,7 +6852,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 831903123}
-  numberOfSpawns: 3
   enabled: 0
   cooldown: 5
 --- !u!1 &914676647
@@ -7088,7 +7091,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 358168957}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &952934198
@@ -7134,7 +7136,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 142735380}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1001 &973851410
@@ -8118,7 +8119,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!54 &1116769893
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8140,7 +8141,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1116769891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -8189,6 +8190,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 5
   spawner1: {fileID: 501151268}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -8543,7 +8548,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1491227639}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &1151205954
@@ -8558,7 +8562,7 @@ GameObject:
   - 65: {fileID: 1151205958}
   m_Layer: 0
   m_Name: Movement Controller
-  m_TagString: Untagged
+  m_TagString: Movement Controller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8575,7 +8579,7 @@ Transform:
   m_Children:
   - {fileID: 847034324}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &1151205957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8647,7 +8651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1161922446
 GameObject:
   m_ObjectHideFlags: 0
@@ -8674,6 +8678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 361177506}
+  - {fileID: 1466281736}
   - {fileID: 1837153196}
   - {fileID: 1646726818}
   - {fileID: 2120297112}
@@ -8689,9 +8694,8 @@ Transform:
   - {fileID: 2046026862}
   - {fileID: 1996119365}
   - {fileID: 1447992347}
-  - {fileID: 1466281736}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1179529329
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,7 +9310,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!54 &1223549998
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9328,7 +9332,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1223549996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -9377,6 +9381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 1319164939}
   spawner2: {fileID: 1630658916}
   spawner3: {fileID: 0}
@@ -9745,7 +9753,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1917565607}
   - {fileID: 57128781}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &1266370875
@@ -10155,7 +10162,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 485621366}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &1294670681
@@ -10364,7 +10370,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1416292905}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &1321820681
@@ -10572,7 +10577,7 @@ Transform:
   - {fileID: 427682813}
   - {fileID: 27304020}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &1343014751
 GameObject:
   m_ObjectHideFlags: 0
@@ -10616,7 +10621,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 629609380}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1001 &1370220811
@@ -10922,6 +10926,47 @@ MonoBehaviour:
   hostile: 1
   idle: 0
   occupied: 0
+--- !u!1 &1433957177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1433957179}
+  - 114: {fileID: 1433957178}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1433957178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433957177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7305cc047bdc02743adb12630257a169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kills: 0
+  tempKillCount: 0
+--- !u!4 &1433957179
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433957177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1001 &1443169793
 Prefab:
   m_ObjectHideFlags: 0
@@ -11007,7 +11052,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!54 &1447992348
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11029,7 +11074,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1447992346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -11078,6 +11123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 2004130194}
   spawner2: {fileID: 372102086}
   spawner3: {fileID: 427682814}
@@ -11170,7 +11219,7 @@ GameObject:
   - 54: {fileID: 1466281738}
   - 114: {fileID: 1466281737}
   m_Layer: 0
-  m_Name: Stop Point 16
+  m_Name: Stop Point 0
   m_TagString: stopPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11187,7 +11236,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000033, z: .200000033}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 16
+  m_RootOrder: 1
 --- !u!114 &1466281737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11200,6 +11249,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 1
+  kills: 0
+  howLong: 5
+  numberOfKills: 0
   spawner1: {fileID: 1538085239}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -11226,7 +11279,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1466281735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -11826,7 +11879,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 378830763}
   - {fileID: 593877071}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &1534227651
@@ -11947,7 +11999,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 604954515}
   - {fileID: 1197407606}
-  numberOfSpawns: 4
   enabled: 0
   cooldown: 5
 --- !u!1 &1540206313
@@ -12082,7 +12133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1546237920
 GameObject:
   m_ObjectHideFlags: 0
@@ -12114,7 +12165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!114 &1546237922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12498,7 +12549,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!54 &1575888646
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12520,7 +12571,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1575888644}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -12569,6 +12620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 371802349}
   spawner2: {fileID: 1770696870}
   spawner3: {fileID: 0}
@@ -12671,7 +12726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1603665299 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 138166, guid: d210967019695c941b175be3fa4d4d99, type: 2}
@@ -12719,7 +12774,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 501315797}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1001 &1632340381
@@ -12807,7 +12861,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!54 &1646726819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12829,7 +12883,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646726817}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -12878,6 +12932,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 1
+  kills: 1
+  howLong: 1
+  numberOfKills: 5
   spawner1: {fileID: 1921091089}
   spawner2: {fileID: 1759194435}
   spawner3: {fileID: 0}
@@ -12999,7 +13057,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 2066874259}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &1716034706
@@ -13033,7 +13090,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!54 &1716034708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13055,7 +13112,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1716034706}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -13104,6 +13161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 1
+  kills: 0
+  howLong: 10
+  numberOfKills: 0
   spawner1: {fileID: 1916422310}
   spawner2: {fileID: 853685001}
   spawner3: {fileID: 0}
@@ -13289,7 +13350,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1987568556}
   - {fileID: 463199230}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &1770696868
@@ -13335,7 +13395,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1783056760}
-  numberOfSpawns: 1
   enabled: 0
   cooldown: 5
 --- !u!1 &1780641837
@@ -13577,7 +13636,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 322490883}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &1810287001
@@ -13781,14 +13839,14 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!23 &1837153197
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1837153195}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -13852,6 +13910,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 2
   spawner1: {fileID: 641305921}
   spawner2: {fileID: 1522253752}
   spawner3: {fileID: 1910812955}
@@ -14223,7 +14285,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1236908404}
   - {fileID: 430786168}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &1916350318
@@ -14315,7 +14376,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2095656390}
   - {fileID: 2016826569}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!1 &1917565607
@@ -14407,7 +14467,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 561561665}
   - {fileID: 1844553307}
-  numberOfSpawns: 3
   enabled: 0
   cooldown: 5
 --- !u!1 &1941814714
@@ -14441,7 +14500,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!54 &1941814716
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14463,7 +14522,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941814714}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -14512,6 +14571,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 1
+  kills: 0
+  howLong: 5
+  numberOfKills: 0
   spawner1: {fileID: 721105517}
   spawner2: {fileID: 371802349}
   spawner3: {fileID: 0}
@@ -14558,7 +14621,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1955049579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -14606,7 +14669,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!114 &1955049585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14619,6 +14682,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 6
   spawner1: {fileID: 284135593}
   spawner2: {fileID: 2044914970}
   spawner3: {fileID: 0}
@@ -14978,7 +15045,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!54 &1996119366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15000,7 +15067,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996119364}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -15049,6 +15116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 1343014753}
   spawner2: {fileID: 911465199}
   spawner3: {fileID: 952934200}
@@ -15170,7 +15241,6 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1214178822}
-  numberOfSpawns: 5
   enabled: 0
   cooldown: 5
 --- !u!1 &2006409337
@@ -15553,7 +15623,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1032037474}
   - {fileID: 308021512}
-  numberOfSpawns: 2
   enabled: 0
   cooldown: 5
 --- !u!4 &2044914971
@@ -15645,7 +15714,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!54 &2046026863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15667,7 +15736,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2046026861}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -15716,6 +15785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 0
+  kills: 1
+  howLong: 0
+  numberOfKills: 8
   spawner1: {fileID: 830945322}
   spawner2: {fileID: 1343014753}
   spawner3: {fileID: 0}
@@ -15902,7 +15975,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1161922447}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!54 &2120297113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15924,7 +15997,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2120297111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -15973,6 +16046,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
+  timer: 1
+  kills: 1
+  howLong: 5
+  numberOfKills: 1
   spawner1: {fileID: 1808005765}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
