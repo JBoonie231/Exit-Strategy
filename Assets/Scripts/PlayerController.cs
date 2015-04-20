@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 			{
 				Debug.Log("Boom. Headshot.");
 
-				StartCoroutine(destroyEnemyObject(hit.collider.gameObject));
+				//StartCoroutine(destroyEnemyObject(hit.collider.gameObject));
 			}
 		}
 	}
