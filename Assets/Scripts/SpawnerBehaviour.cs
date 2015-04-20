@@ -37,16 +37,16 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(spawnable)
 		{
-			if(numberOfSpawns > 0){
+
 				StartCoroutine("Spawn");
-				numberOfSpawns--;
-			}
+
+
 		}
 	}
 
 	IEnumerator Spawn()
 	{
-		if(waypoints.Length != 0)
+		if(waypoints.Length != 0 && numberOfSpawns > 0)
 		{
 			tempWaypoint = waypoints[Random.Range(0, waypoints.Length)];
 			if(!tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied)
@@ -60,7 +60,7 @@ public class SpawnerBehaviour : MonoBehaviour
 				spawneeClone.transform.rotation = transform.rotation;
 				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().tag = "Enemy";
 				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = tempWaypoint;
-
+				numberOfSpawns--;
 				yield return new WaitForSeconds(cooldown);
 				spawnable = true;
 			}
