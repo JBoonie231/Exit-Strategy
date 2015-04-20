@@ -5,13 +5,14 @@ public class AlienSoldierBehaviour : MonoBehaviour
 {
 	public GameObject target;
 	public GameObject weapon;
+	public int numberOfShots;
+	public float timeBetweenShots;
+	public float health;
 
 	NavMeshAgent agent;
 
 	GameObject player;
 	GameObject tempWaypoint;
-
-	float health;
 
 	enum TopState {Idle, Engage, Flee, Die};
 	enum IdleState {Standing, Walking, Talking};
@@ -19,6 +20,8 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	bool waiting;
 	float waitTime;
+	int shotsTaken;
+
 	float waitCooldown = 3f;
 
 	TopState topState;
@@ -174,12 +177,32 @@ public class AlienSoldierBehaviour : MonoBehaviour
 		}
 	}
 
+	// Shoot a volley towards the player
 	void Shooting()
 	{
 		LookAtPlayer();
 
-		// Shoot a volley towards the player
-		engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		if(numberOfShots > shotsTaken)
+		{
+			if(!waiting)
+			{
+				waiting = true;
+				waitTime = Time.time + timeBetweenShots;
+			}
+
+			if(Time.time > waitTime)
+			{
+				waiting = false;
+				shotsTaken++;
+
+				weapon.GetComponent<WeaponBehaviour>().Fire();
+			}
+		}
+		else
+		{
+			shotsTaken = 0;
+			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
+		}
 	}
 
 	void Cover()

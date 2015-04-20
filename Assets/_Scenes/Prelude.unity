@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 292474620}
   - 114: {fileID: 292474621}
+  - 65: {fileID: 292474622}
   m_Layer: 0
   m_Name: Player Controller
   m_TagString: Player
@@ -173,6 +174,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a304bdee4ff414a92dd9942fa0798c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
+--- !u!65 &292474622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292474619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: .519999981, z: .25}
+  m_Center: {x: 0, y: 0, z: .300000012}
+--- !u!1 &315946042 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 138166, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+  m_PrefabInternal: {fileID: 702305090}
 --- !u!1001 &702305090
 Prefab:
   m_ObjectHideFlags: 0
@@ -180,6 +198,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11435122, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 470052, guid: d210967019695c941b175be3fa4d4d99, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.26963115
@@ -216,6 +238,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy Waypoint 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11435122, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1887103433}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d210967019695c941b175be3fa4d4d99, type: 2}
   m_IsPrefabParent: 0
@@ -226,6 +252,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11435122, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 470052, guid: d210967019695c941b175be3fa4d4d99, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.97933912
@@ -258,6 +288,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11435122, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 315946042}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d210967019695c941b175be3fa4d4d99, type: 2}
   m_IsPrefabParent: 0
@@ -268,6 +302,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11418286, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
+      propertyPath: waypoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 457966, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -300,6 +338,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11418286, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
+      propertyPath: spawnee
+      value: 
+      objectReference: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
+    - target: {fileID: 11418286, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1887103433}
+    - target: {fileID: 11418286, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 315946042}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d3c639153d0f264eac271bfc2975b82, type: 2}
   m_IsPrefabParent: 0
@@ -697,6 +747,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1887103433 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 138166, guid: d210967019695c941b175be3fa4d4d99, type: 2}
+  m_PrefabInternal: {fileID: 779721106}
 --- !u!1 &2051293495
 GameObject:
   m_ObjectHideFlags: 0

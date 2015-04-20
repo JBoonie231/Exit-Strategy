@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour 
 {
+	public float health;
+
 	bool primaryFire;
 	float lookVertical;
 	float lookHorizontal;
@@ -53,5 +55,16 @@ public class PlayerController : MonoBehaviour
 	void TurnHead ()
 	{
 		transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(90f*lookVertical, 90f*lookHorizontal, 0f), 5f);
+	}
+
+	public void TakeDamage(float amount)
+	{
+		health -= amount;
+		if(health <= 0)
+		{
+			health = 0;
+			// Game Over
+			Debug.Log("GAME OVER");
+		}
 	}
 }
