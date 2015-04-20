@@ -25,11 +25,11 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(enabled && spawnable)
 		{
-			if(numberOfSpawns > 0){
-				StartCoroutine("Spawn");
-				numberOfSpawns--;
-			}
+
+			StartCoroutine("Spawn");
+
 		}
+
 	}
 
 	// Spawns the spawnee when the Spawn button in the inspector is activated
@@ -37,7 +37,10 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(spawnable)
 		{
-			StartCoroutine("Spawn");
+			if(numberOfSpawns > 0){
+				StartCoroutine("Spawn");
+				numberOfSpawns--;
+			}
 		}
 	}
 
@@ -52,9 +55,10 @@ public class SpawnerBehaviour : MonoBehaviour
 				spawnable = false;
 
 				spawneeClone = Instantiate(spawnee);
+			
 				spawneeClone.transform.position = transform.position;
 				spawneeClone.transform.rotation = transform.rotation;
-			
+				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().tag = "Enemy";
 				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = tempWaypoint;
 
 				yield return new WaitForSeconds(cooldown);

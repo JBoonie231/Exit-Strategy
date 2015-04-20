@@ -39,10 +39,17 @@ public class PlayerController : MonoBehaviour
 			if (hit.collider.gameObject.tag == "Enemy")
 			{
 				Debug.Log("Boom. Headshot.");
+
+				StartCoroutine(destroyEnemyObject(hit.collider.gameObject));
 			}
 		}
 	}
-
+	IEnumerator destroyEnemyObject(GameObject gameObject){
+		Debug.Log ("Delaying object destruction");
+		yield return new WaitForSeconds(.3f);
+		Debug.Log ("Object Destroyed");
+		Destroy(gameObject);
+	}
 	void TurnHead ()
 	{
 		transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(90f*lookVertical, 90f*lookHorizontal, 0f), 5f);
