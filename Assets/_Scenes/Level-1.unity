@@ -455,9 +455,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 5
   numberOfKills: 8
   spawner1: {fileID: 946645940}
   spawner2: {fileID: 1289033950}
@@ -1517,9 +1517,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 8
   spawner1: {fileID: 1151160376}
   spawner2: {fileID: 0}
@@ -1759,9 +1759,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 6
   spawner1: {fileID: 1258523910}
   spawner2: {fileID: 92624672}
@@ -8250,9 +8250,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 5
   spawner1: {fileID: 501151268}
   spawner2: {fileID: 0}
@@ -9441,9 +9441,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 8
   spawner1: {fileID: 1319164939}
   spawner2: {fileID: 1630658916}
@@ -11183,9 +11183,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 8
   spawner1: {fileID: 2004130194}
   spawner2: {fileID: 372102086}
@@ -11311,7 +11311,7 @@ MonoBehaviour:
   motionPath: {fileID: 0}
   timer: 1
   kills: 0
-  howLong: 5
+  howLong: 10
   numberOfKills: 0
   spawner1: {fileID: 1538085239}
   spawner2: {fileID: 0}
@@ -12680,9 +12680,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 8
   spawner1: {fileID: 371802349}
   spawner2: {fileID: 1770696870}
@@ -12994,8 +12994,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
   timer: 1
-  kills: 1
-  howLong: 1
+  kills: 0
+  howLong: 15
   numberOfKills: 5
   spawner1: {fileID: 1921091089}
   spawner2: {fileID: 1759194435}
@@ -13971,9 +13971,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 15
   numberOfKills: 2
   spawner1: {fileID: 641305921}
   spawner2: {fileID: 1522253752}
@@ -14634,7 +14634,7 @@ MonoBehaviour:
   motionPath: {fileID: 0}
   timer: 1
   kills: 0
-  howLong: 5
+  howLong: 10
   numberOfKills: 0
   spawner1: {fileID: 721105517}
   spawner2: {fileID: 371802349}
@@ -14743,9 +14743,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 6
   spawner1: {fileID: 284135593}
   spawner2: {fileID: 2044914970}
@@ -15177,9 +15177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 10
   numberOfKills: 8
   spawner1: {fileID: 1343014753}
   spawner2: {fileID: 911465199}
@@ -15846,12 +15846,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 0
-  kills: 1
-  howLong: 0
+  timer: 1
+  kills: 0
+  howLong: 5
   numberOfKills: 8
   spawner1: {fileID: 830945322}
-  spawner2: {fileID: 1343014753}
+  spawner2: {fileID: 296155671}
   spawner3: {fileID: 0}
   spawner4: {fileID: 0}
   spawner5: {fileID: 0}
@@ -16107,9 +16107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motionPath: {fileID: 0}
-  timer: 1
+  timer: 0
   kills: 1
-  howLong: 5
+  howLong: 15
   numberOfKills: 1
   spawner1: {fileID: 1808005765}
   spawner2: {fileID: 0}
