@@ -158,13 +158,14 @@ public class MotionPath : MonoBehaviour
 	{
 		Gizmos.matrix = transform.localToWorldMatrix;
 		iTween.DrawPath(controlPoints);
-		if (!UnityEditor.Selection.Contains(gameObject))
+/*		if (!UnityEditor.Selection.Contains(gameObject))
 		{
 			Gizmos.color = Color.green;
 			Gizmos.DrawSphere(controlPoints[0], .2f);
 			Gizmos.color = Color.red;
 			Gizmos.DrawSphere(controlPoints[controlPoints.Length-1], .2f);
-		}
 
+		}
+		*/
 	}
 }
