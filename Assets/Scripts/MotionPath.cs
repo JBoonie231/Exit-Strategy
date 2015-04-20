@@ -165,6 +165,6 @@ public class MotionPath : MonoBehaviour
 			Gizmos.color = Color.red;
 			Gizmos.DrawSphere(controlPoints[controlPoints.Length-1], .2f);
 		}
-		
+
 	}
 }

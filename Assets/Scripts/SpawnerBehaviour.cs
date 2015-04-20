@@ -25,11 +25,8 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(enabled && spawnable)
 		{
-
 			StartCoroutine("Spawn");
-
 		}
-
 	}
 
 	// Spawns the spawnee when the Spawn button in the inspector is activated
@@ -37,10 +34,7 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(spawnable)
 		{
-			//if(numberOfSpawns > 0){
 				StartCoroutine("Spawn");
-				//numberOfSpawns--;
-			//}
 		}
 	}
 
