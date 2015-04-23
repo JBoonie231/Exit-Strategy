@@ -3,10 +3,10 @@ using System.Collections;
 
 public class GameController : MonoBehaviour 
 {
-	GameObject player;
-	GameObject movementController;
+	public GameObject player;
+	public GameObject movementController;
 	GameObject currentTriggerObject;
-
+	PauseMenu pauseMenu;
 	GameObject[] enemies;
 
 	public int kills;
@@ -31,7 +31,18 @@ public class GameController : MonoBehaviour
 		{
 			TryToStopSpawners();
 		}
+		if(Input.GetKey("escape")) 
+		{
+			Time.timeScale = 0.0f;
+			player.gameObject.active = false;
+			if(pauseMenu == null){
+				pauseMenu = gameObject.AddComponent<PauseMenu>();
+			}
+
+		}
+
 	}
+
 
 	public void StartSpawners(GameObject trigger)
 	{

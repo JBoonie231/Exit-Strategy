@@ -15,4 +15,7 @@ public class LevelChange : MonoBehaviour {
 	public void loadLevel1(){
 		Application.LoadLevel ("Level-1");
 	}
+	public void loadTitle(){
+		Application.LoadLevel ("Title");
+	}
 }
