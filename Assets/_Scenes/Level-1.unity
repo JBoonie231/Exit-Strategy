@@ -11013,6 +11013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7305cc047bdc02743adb12630257a169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  movementController: {fileID: 0}
   kills: 0
   tempKillCount: 0
 --- !u!4 &1433957179

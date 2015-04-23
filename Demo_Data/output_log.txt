@@ -14,7 +14,7 @@ Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\
 Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.068 seconds
+- Completed reload, in  0.080 seconds
 desktop: 1920x1080 60Hz; virtual: 5440x1080 at -1600,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -22,15 +22,15 @@ desktop: 1920x1080 60Hz; virtual: 5440x1080 at -1600,0
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1734 -> priority: 1 
-  Thread -> id: 1570 -> priority: 1 
+  Thread -> id: 1188 -> priority: 1 
+  Thread -> id: 1d8c -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.499760 ms
+UnloadTime: 2.933747 ms
 System memory in use before: 17.0 MB.
 System memory in use after: 17.1 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1697.
-Total: 0.254462 ms (FindLiveObjects: 0.037887 ms CreateObjectMapping: 0.030975 ms MarkObjects: 0.164351 ms  DeleteObjects: 0.020735 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1698.
+Total: 0.274174 ms (FindLiveObjects: 0.046847 ms CreateObjectMapping: 0.031743 ms MarkObjects: 0.173823 ms  DeleteObjects: 0.021503 ms)
 
 stopPoint
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
@@ -76,19 +76,27 @@ PlayerController:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\
  
 (Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/PlayerController.cs Line: 43)
 
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.851452 ms
-System memory in use before: 16.6 MB.
-System memory in use after: 15.7 MB.
+Boom. Headshot.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:PrimaryFire() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:43)
+PlayerController:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:32)
+ 
+(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/PlayerController.cs Line: 43)
 
-Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 219.
-Total: 0.227071 ms (FindLiveObjects: 0.010239 ms CreateObjectMapping: 0.009215 ms MarkObjects: 0.123647 ms  DeleteObjects: 0.083711 ms)
+Boom. Headshot.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:PrimaryFire() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:43)
+PlayerController:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:32)
+ 
+(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/PlayerController.cs Line: 43)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.377086 ms
-System memory in use before: 17.2 MB.
-System memory in use after: 17.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1729.
-Total: 0.268030 ms (FindLiveObjects: 0.034559 ms CreateObjectMapping: 0.023807 ms MarkObjects: 0.189951 ms  DeleteObjects: 0.019455 ms)
+Boom. Headshot.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerController:PrimaryFire() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:43)
+PlayerController:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:32)
+ 
+(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/PlayerController.cs Line: 43)
 
