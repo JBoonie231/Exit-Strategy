@@ -4,6 +4,7 @@ using System.Collections;
 public class UpgradeMenu : MonoBehaviour {
 	GUISkin newSkin;
 	Powers powers;
+	BulletCollide bullet;
 	public void theUpgradeMenu()
 	{
 
@@ -13,22 +14,26 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.BeginGroup (new Rect (100, 100, 200, 200));
 		GUI.Box(new Rect(0, 0, 200, 200), "Beretta 92");
 		GUI.Label (new Rect(75, 25, 300, 225), "Damage");
-		
-		if (GUI.Button (new Rect (10, 22, 25, 25), "-")) 
-		{
-
-		}
-		if (GUI.Button (new Rect (170, 22, 25, 25), "+")) 
-		{
-			
-		}
-		GUI.Label (new Rect(73, 55, 300, 225), "Accuracy");
-		
+		//GUI.Label (new Rect(75, 55, 300, 225), bullet.damage.ToString());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
-			
+			/*if(bullet.damage > 1f ){
+				bullet.damage -= .1f;
+			} */
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) 
+		{
+			/*if(bullet.damage < 1.5f ){
+				bullet.damage += .1f;
+			}*/
+		}
+		GUI.Label (new Rect(73, 82, 300, 225), "Accuracy");
+		
+		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) 
+		{
+			
+		}
+		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) 
 		{
 			
 		}
@@ -111,6 +116,7 @@ public class UpgradeMenu : MonoBehaviour {
 		
 	{
 		powers = GetComponent<Powers> ();
+		bullet = GetComponent<BulletCollide> ();
 		//load GUI skin
 		
 		GUI.skin = newSkin;

@@ -5946,6 +5946,7 @@ Transform:
   - {fileID: 1271887957}
   - {fileID: 1540206317}
   - {fileID: 1730993342}
+  - {fileID: 1499588562}
   m_Father: {fileID: 0}
   m_RootOrder: 10
 --- !u!1 &771598987
@@ -11770,7 +11771,7 @@ Transform:
   m_LocalPosition: {x: -65.2286377, y: -62.9932251, z: -149.74231}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 766339998}
   m_RootOrder: 11
 --- !u!4 &1501218128 stripped
 Transform:
