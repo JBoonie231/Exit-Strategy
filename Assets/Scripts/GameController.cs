@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 	GameObject currentTriggerObject;
 	PauseMenu pauseMenu;
 	GameObject[] enemies;
+	Powers powers;
 
 	public int kills;
 	public int tempKillCount;
@@ -20,6 +21,8 @@ public class GameController : MonoBehaviour
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
+		powers = gameObject.AddComponent<Powers> ();
+
 	}
 	
 	// Update is called once per frame
