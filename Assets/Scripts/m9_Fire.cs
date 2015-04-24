@@ -10,6 +10,7 @@ public class m9_Fire : MonoBehaviour
 	public float Volume = 1.0f;
 	public int ClipSize = 12;
 	public float ReloadTime = .3f;
+	public float damage = 1f;
 	
 	private AudioSource source;
 	private int shots = 0; 

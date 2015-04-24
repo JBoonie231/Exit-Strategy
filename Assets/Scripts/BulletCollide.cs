@@ -7,12 +7,14 @@ public class BulletCollide : MonoBehaviour
 	public float Velocity = .5f; 
 	public float SecToDest = 15f;
 	private float startTime; 
-	public float damage;
+	//public float damage;
+	m9_Fire m9;
 
 	// Use this for initialization
 	void Start () 
 	{
 		startTime = Time.time;
+		m9 = GetComponent<m9_Fire> ();
 	}
 
 
@@ -25,7 +27,7 @@ public class BulletCollide : MonoBehaviour
 
 		if (other.gameObject.tag == "Enemy") 
 		{
-			other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(damage);
+			other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
 		}
 
 		//no matter what the bullet hits it should be destroyed

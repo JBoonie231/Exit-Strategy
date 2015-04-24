@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 	PauseMenu pauseMenu;
 	GameObject[] enemies;
 	Powers powers;
+	public m9_Fire m9;
 
 	public int kills;
 	public int tempKillCount;
@@ -22,7 +23,7 @@ public class GameController : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag("Player");
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
-
+		m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
 	}
 	
 	// Update is called once per frame

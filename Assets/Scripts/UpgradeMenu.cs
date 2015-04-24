@@ -4,28 +4,32 @@ using System.Collections;
 public class UpgradeMenu : MonoBehaviour {
 	GUISkin newSkin;
 	Powers powers;
-	BulletCollide bullet;
+	GameController gameController;
+	public m9_Fire m9;
 	public void theUpgradeMenu()
 	{
 
-		
-		
+		gameController = GetComponent<GameController> ();
+		m9 = gameController.m9;
+
+		Debug.Log (m9.damage);
+		//m9 = GetComponent<m9_Fire> ();
 		//the menu background box
 		GUI.BeginGroup (new Rect (100, 100, 200, 200));
-		GUI.Box(new Rect(0, 0, 200, 200), "Beretta 92");
+		GUI.Box(new Rect(0, 0, 200, 200), "M9");
 		GUI.Label (new Rect(75, 25, 300, 225), "Damage");
-		//GUI.Label (new Rect(75, 55, 300, 225), bullet.damage.ToString());
+		GUI.Label (new Rect(75, 55, 300, 225), m9.damage.ToString());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
-			/*if(bullet.damage > 1f ){
-				bullet.damage -= .1f;
-			} */
+			if(m9.damage > 1f ){
+				m9.damage -= .1f;
+			} 
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) 
 		{
-			/*if(bullet.damage < 1.5f ){
-				bullet.damage += .1f;
-			}*/
+			if(m9.damage < 1.5f ){
+				m9.damage += .1f;
+			}
 		}
 		GUI.Label (new Rect(73, 82, 300, 225), "Accuracy");
 		
@@ -116,7 +120,8 @@ public class UpgradeMenu : MonoBehaviour {
 		
 	{
 		powers = GetComponent<Powers> ();
-		bullet = GetComponent<BulletCollide> ();
+
+
 		//load GUI skin
 		
 		GUI.skin = newSkin;
