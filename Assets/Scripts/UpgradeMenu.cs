@@ -3,6 +3,7 @@ using System.Collections;
 
 public class UpgradeMenu : MonoBehaviour {
 	GUISkin newSkin;
+	Powers powers;
 	public void theUpgradeMenu()
 	{
 
@@ -55,27 +56,36 @@ public class UpgradeMenu : MonoBehaviour {
 			
 		}
 		GUI.EndGroup ();
-		GUI.BeginGroup(new Rect(400, 375, 200, 200));
+		GUI.BeginGroup(new Rect(410, 375, 200, 200));
 		GUI.Box(new Rect(0, 0, 200, 200), "Bullet Time");
 		GUI.Label (new Rect(75, 25, 300, 225), "Duration");
-		
+		GUI.Label (new Rect (90, 52, 300, 225), powers.duration.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
-			
+			if(powers.duration > 5 ){
+				powers.duration -= 1f;
+			}
+
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) 
 		{
-			
+			if(powers.duration < 20 ){
+				powers.duration += 1f;
+			}
 		}
-		GUI.Label (new Rect(65, 55, 300, 225), "Effectiveness");
-		
-		if (GUI.Button (new Rect (10, 22, 25, 25), "-")) 
+		GUI.Label (new Rect(65, 85, 300, 225), "Effectiveness");
+		GUI.Label (new Rect (90, 115, 300, 225), powers.effectiveness.ToString ());
+		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) 
 		{
-			
+			if(powers.effectiveness > .1f ){
+				powers.effectiveness -= .1f;
+			}
 		}
-		if (GUI.Button (new Rect (170, 22, 25, 25), "+")) 
+		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) 
 		{
-			
+			if(powers.effectiveness <= .7f){
+				powers.effectiveness += .1f;
+			}
 		}
 		GUI.EndGroup ();
 		/*GUI.BeginGroup(new Rect(Screen.width / 2 -100, Screen.height-60, 300, 300));
@@ -100,7 +110,7 @@ public class UpgradeMenu : MonoBehaviour {
 	void OnGUI ()
 		
 	{
-		
+		powers = GetComponent<Powers> ();
 		//load GUI skin
 		
 		GUI.skin = newSkin;
