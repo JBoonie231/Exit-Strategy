@@ -18,7 +18,7 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.BeginGroup (new Rect (100, 100, 200, 200));
 		GUI.Box(new Rect(0, 0, 200, 200), "M9");
 		GUI.Label (new Rect(75, 25, 300, 225), "Damage");
-		GUI.Label (new Rect(75, 55, 300, 225), m9.damage.ToString());
+		GUI.Label (new Rect(95, 55, 300, 225), m9.damage.ToString());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
 			if(m9.damage > 1f ){
@@ -68,7 +68,7 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.BeginGroup(new Rect(410, 375, 200, 200));
 		GUI.Box(new Rect(0, 0, 200, 200), "Bullet Time");
 		GUI.Label (new Rect(75, 25, 300, 225), "Duration");
-		GUI.Label (new Rect (90, 52, 300, 225), powers.duration.ToString ());
+		GUI.Label (new Rect (95, 52, 300, 225), powers.duration.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
 			if(powers.duration > 5 ){
@@ -83,7 +83,7 @@ public class UpgradeMenu : MonoBehaviour {
 			}
 		}
 		GUI.Label (new Rect(65, 85, 300, 225), "Effectiveness");
-		GUI.Label (new Rect (90, 115, 300, 225), powers.effectiveness.ToString ());
+		GUI.Label (new Rect (95, 115, 300, 225), powers.effectiveness.ToString ());
 		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) 
 		{
 			if(powers.effectiveness > .1f ){

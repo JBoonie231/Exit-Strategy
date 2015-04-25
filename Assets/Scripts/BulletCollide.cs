@@ -9,17 +9,22 @@ public class BulletCollide : MonoBehaviour
 	private float startTime; 
 	//public float damage;
 	m9_Fire m9;
+	public float currentDamage;
 
 	// Use this for initialization
 	void Start () 
 	{
 		startTime = Time.time;
-		m9 = GetComponent<m9_Fire> ();
+		GameController gameController;
+		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+		m9 = gameController.m9;
 	}
 
 
 	void OnTriggerEnter(Collider other)
 	{
+		currentDamage = m9.damage;
+		Debug.Log (currentDamage);
 		if (other.gameObject.tag == "environment") 
 		{
 			//needs to leave scorch marks	
