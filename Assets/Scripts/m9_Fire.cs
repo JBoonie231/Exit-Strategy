@@ -31,7 +31,7 @@ public class m9_Fire : MonoBehaviour
 				Fire();
 		}
 		
-		if (Input.GetKeyUp ("r")) 
+		if (Input.GetKeyDown ("r")) 
 		{
 			CanFire = false;
 			StartCoroutine(Reload (ReloadTime));
