@@ -25,16 +25,13 @@ public class m9_Fire : MonoBehaviour
 	void Update ()
 	{
 		
-		Vector3 mousePos = Input.mousePosition;
-		transform.LookAt(Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10.0f)));
-		
 		if (Input.GetButtonDown ("Fire1")) 
 		{
 			if (CanFire)
 				Fire();
 		}
 		
-		if (Input.GetKey ("r")) 
+		if (Input.GetKeyUp ("r")) 
 		{
 			CanFire = false;
 			StartCoroutine(Reload (ReloadTime));
