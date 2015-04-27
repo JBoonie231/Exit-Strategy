@@ -4,11 +4,15 @@ using System.Collections;
 public class PlayerController : MonoBehaviour 
 {
 	public float health;
-
+	public float maxHealth;
+	public int lives;
 	bool primaryFire;
 	float lookVertical;
 	float lookHorizontal;
-
+	public bool shieldEnable = true;
+	public bool shieldOn = false;
+	public float shieldDamage = 1f;
+	public int shieldDuration = 0;
 	RaycastHit hit;
 	float range = 50f;
 
@@ -16,11 +20,15 @@ public class PlayerController : MonoBehaviour
 	void Start () 
 	{
 		primaryFire = false;
+		health = maxHealth;
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+
+
 		lookVertical = -Input.GetAxis("Vertical");
 		lookHorizontal = Input.GetAxis("Horizontal");
 		primaryFire = Input.GetButtonDown("Fire1");
@@ -31,6 +39,7 @@ public class PlayerController : MonoBehaviour
 		{
 			PrimaryFire();
 		}
+
 	}
 
 	void PrimaryFire ()
@@ -40,16 +49,16 @@ public class PlayerController : MonoBehaviour
 		{
 			if (hit.collider.gameObject.tag == "Enemy")
 			{
-				Debug.Log("Boom. Headshot.");
+				//Debug.Log("Boom. Headshot.");
 
 				//StartCoroutine(destroyEnemyObject(hit.collider.gameObject));
 			}
 		}
 	}
 	IEnumerator destroyEnemyObject(GameObject gameObject){
-		Debug.Log ("Delaying object destruction");
+		//Debug.Log ("Delaying object destruction");
 		yield return new WaitForSeconds(.3f);
-		Debug.Log ("Object Destroyed");
+		//Debug.Log ("Object Destroyed");
 		Destroy(gameObject);
 	}
 	void TurnHead ()
@@ -59,12 +68,22 @@ public class PlayerController : MonoBehaviour
 
 	public void TakeDamage(float amount)
 	{
-		health -= amount;
+		if (shieldOn == false) {
+			health -= amount;
+		} else {
+			health -= shieldDamage;
+		}
 		if(health <= 0)
 		{
-			health = 0;
+			health = maxHealth;
+			lives--;
 			// Game Over
-			Debug.Log("GAME OVER");
+			if(lives ==0){
+				Application.LoadLevel("GameOver");
+			}
+			Debug.Log("Player Death");
 		}
 	}
+
+
 }

@@ -8,12 +8,12 @@ public class m9_Fire : MonoBehaviour
 	public AudioClip M9Fire;
 	public AudioClip M9Reload;
 	public float Volume = 1.0f;
-	public int ClipSize = 12;
+	public int ClipSize = 9;
 	public float ReloadTime = .3f;
 	public float damage = 1f;
 	
 	private AudioSource source;
-	private int shots = 0; 
+	public int shots = 0; 
 	private bool CanFire = true; 
 	
 	void Awake ()

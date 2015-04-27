@@ -12,6 +12,7 @@ TagManager:
   - Change Rail
   - Movement Controller
   - m9
+  - Enemy Bullet
   layers:
   - Default
   - TransparentFX

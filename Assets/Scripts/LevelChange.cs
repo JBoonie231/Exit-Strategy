@@ -10,7 +10,7 @@ public class LevelChange : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 	public void loadLevel1(){
 		Application.LoadLevel ("Level-1");
@@ -18,4 +18,5 @@ public class LevelChange : MonoBehaviour {
 	public void loadTitle(){
 		Application.LoadLevel ("Title");
 	}
+
 }

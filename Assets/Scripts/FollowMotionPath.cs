@@ -42,7 +42,7 @@ public class FollowMotionPath : MonoBehaviour
 		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.tag == "stopPoint") {
 			pause = true;
-			Debug.Log ("STOP POINT DETECTED");
+			//Debug.Log ("STOP POINT DETECTED");
 
 			gameController.StartSpawners(other.gameObject);
 		}	
@@ -50,7 +50,7 @@ public class FollowMotionPath : MonoBehaviour
 			trigger = other.gameObject.GetComponent<Triggers>();
 			motionPath = trigger.motionPath;
 			uv = 0;
-			Debug.Log ("Rail change detected");
+			//Debug.Log ("Rail change detected");
 		}
 	} 
 }

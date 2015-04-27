@@ -32,6 +32,7 @@ public class PauseMenu : MonoBehaviour
 		{
 
 			//GUI.BeginGroup = null;
+			Cursor.visible = false;
 			Time.timeScale = 1.0f;
 			this.enabled = false;
 			GameController gC = this.GetComponentInParent<GameController>();

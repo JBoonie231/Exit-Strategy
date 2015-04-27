@@ -4,6 +4,7 @@ using System.Collections;
 public class GameController : MonoBehaviour 
 {
 	public GameObject player;
+	public PlayerController playerController;
 	public GameObject movementController;
 	GameObject currentTriggerObject;
 	PauseMenu pauseMenu;
@@ -20,7 +21,10 @@ public class GameController : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		Time.timeScale = 1f;
+		Cursor.visible = false;
 		player = GameObject.FindGameObjectWithTag("Player");
+		playerController =player.GetComponent<PlayerController> ();
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
 		m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
@@ -29,6 +33,7 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
 		if(currentTriggerObject != null)
@@ -37,6 +42,7 @@ public class GameController : MonoBehaviour
 		}
 		if(Input.GetKey("escape")) 
 		{
+			Cursor.visible = true;
 			Time.timeScale = 0.0f;
 			player.gameObject.active = false;
 			if(pauseMenu == null){
@@ -57,7 +63,7 @@ public class GameController : MonoBehaviour
 
 		currentTriggerObject = trigger;
 
-		Debug.Log ("Spawning enemies");
+
 		this.trigger = currentTriggerObject.GetComponent<Triggers>();
 		if( this.trigger.spawner1 != null){
 			this.trigger.spawner1.enabled = true;
@@ -119,5 +125,19 @@ public class GameController : MonoBehaviour
 			Destroy (currentTriggerObject);
 			movementController.GetComponent<FollowMotionPath>().pause = false;
 		}
+	}
+	void OnGUI(){
+		int bulletsLeft = m9.ClipSize - m9.shots;
+		//GUI.Label (new Rect (75, 25, 300, 225), "Health ");
+		GUI.Label (new Rect(75, 800, 300, 225), "Health " + playerController.health.ToString());
+		GUI.Label (new Rect(75, 825, 300, 225), "Lives " + playerController.lives.ToString());
+		GUI.Label (new Rect(75, 850, 300, 225), "Magazine " + bulletsLeft.ToString());
+		if (playerController.shieldEnable == true) {
+			GUI.Label (new Rect (75, 875, 300, 225), "Shield Ready");
+		}
+		if (powers.bulletEnable == true) {
+			GUI.Label (new Rect(75, 900, 300, 225), "Bullet Time Ready");
+		}
+		
 	}
 }
