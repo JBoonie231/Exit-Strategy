@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Powers : MonoBehaviour {
 	public float effectiveness = 0.1f;
-	public float duration = 5.0f;
+	public float duration = 0.0f;
 	public float bulletTimer;
 	public float shieldTimer;
 	public float cooldown = 20f;

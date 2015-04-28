@@ -60,14 +60,14 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.Label (new Rect(95, 52, 300, 225), player.shieldDuration.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
-			if(player.shieldDuration > 5){
+			if(player.shieldDuration > 0){
 				player.shieldDuration -= 1;
 				upgradeCredits ++;
 			}
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) 
 		{
-			if(player.shieldDuration < 20){
+			if(player.shieldDuration < 10){
 				player.shieldDuration += 1;
 				upgradeCredits --;
 			}
@@ -98,7 +98,7 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.Label (new Rect (95, 52, 300, 225), powers.duration.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) 
 		{
-			if(powers.duration > 5 ){
+			if(powers.duration > 0 ){
 				powers.duration -= 1f;
 				upgradeCredits ++;
 			}
@@ -106,7 +106,7 @@ public class UpgradeMenu : MonoBehaviour {
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) 
 		{
-			if(powers.duration < 20 ){
+			if(powers.duration < 10 ){
 				powers.duration += 1f;
 				upgradeCredits --;
 			}

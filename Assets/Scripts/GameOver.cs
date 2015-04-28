@@ -5,7 +5,7 @@ public class GameOver : MonoBehaviour {
 	public Transform background;
 	// Use this for initialization
 	void Start () {
-		
+		Cursor.visible = true;
 	}
 	
 	// Update is called once per frame
@@ -14,8 +14,8 @@ public class GameOver : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		GUI.color = Color.gray;
-		if (GUI.Button (new Rect (600, 400, 100, 50), "Try Again")) 
+		GUI.color = Color.white;
+		if (GUI.Button (new Rect (910, 600, 100, 50), "Try Again")) 
 		{
 			Application.LoadLevel ("Title");
 		}

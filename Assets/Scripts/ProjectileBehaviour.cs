@@ -38,7 +38,7 @@ public class ProjectileBehaviour : MonoBehaviour
 	void Update () 
 	{
 		//move forward
-		this.gameObject.transform.position += Velocity * this.gameObject.transform.forward;
+		this.gameObject.transform.position += Velocity * this.gameObject.transform.forward * Time.deltaTime;
 		
 		//if the bullet exists too long it must be destroyed 
 		if (Time.time - startTime >= SecToDest) 
