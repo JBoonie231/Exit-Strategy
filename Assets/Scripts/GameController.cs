@@ -4,6 +4,7 @@ using System.Collections;
 public class GameController : MonoBehaviour 
 {
 	public GameObject player;
+	public GameObject Shield;
 	public PlayerController playerController;
 	public GameObject movementController;
 	GameObject currentTriggerObject;

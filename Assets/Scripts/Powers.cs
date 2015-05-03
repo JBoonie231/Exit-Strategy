@@ -11,14 +11,26 @@ public class Powers : MonoBehaviour {
 	public float timeScale;
 	public GameController gameController;
 	public PlayerController player;
+	public GameObject Shield;
+	MeshRenderer rend;
+
 	// Use this for initialization
 	void Start () {
 		gameController = GetComponent<GameController> ();
 		player = gameController.playerController;
+
+		rend = gameController.Shield.GetComponent<MeshRenderer> ();
+		//rend.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (player.shieldOn == true) {
+			rend.enabled = true;
+		} else {
+			rend.enabled = false;
+		}
 		if (bulletEnable == false) {
 			GUI.Label (new Rect(75, 1000, 300, 225), "Bullet Time Ready");
 		}
@@ -37,14 +49,21 @@ public class Powers : MonoBehaviour {
 			//Shield
 		 
 		if (Input.GetKeyDown (KeyCode.E)) {
-			StartCoroutine("enableShield");
-			Debug.Log ("SHIELD ACTIVATED");
+			if(player.shieldEnable == true){
+				StartCoroutine("enableShield");
+				Debug.Log ("SHIELD ACTIVATED");
+
+			}
+		
+
 			}
 		if (player.shieldOn == true) {
 			shieldTimer += Time.deltaTime;
 		}
 		if (shieldTimer > player.shieldDuration) {
+			shieldTimer = 0;
 			player.shieldOn = false;
+
 		}
 	}
 	IEnumerator startBulletTime(){
@@ -60,7 +79,7 @@ public class Powers : MonoBehaviour {
 	IEnumerator enableShield(){
 		player.shieldEnable = false;
 		player.shieldOn = true;
-		yield return new WaitForSeconds (player.shieldDuration+ cooldown);
+		yield return new WaitForSeconds (player.shieldDuration + cooldown);
 		player.shieldEnable = true;
 
 	}
