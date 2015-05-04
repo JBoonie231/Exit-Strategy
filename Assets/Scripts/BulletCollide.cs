@@ -14,6 +14,7 @@ public class BulletCollide : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+
 		startTime = Time.time;
 		GameController gameController;
 		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();

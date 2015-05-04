@@ -39,8 +39,10 @@ public class UnityFlock : MonoBehaviour
 	public float timeBetweenShots;
 	public float health = 3f;
 	GameObject player;
+	GameObject target;
     void Start ()
     {
+		target = GameObject.FindGameObjectWithTag("Target");
 		player = GameObject.FindGameObjectWithTag("Player");
 		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         randomFreq = 1.0f / randomFreq;
@@ -88,6 +90,7 @@ public class UnityFlock : MonoBehaviour
 
     void Update ()
     { 
+		//transform.LookAt(target.transform.position);
 		Shooting ();
         //Internal variables
 	    float speed= velocity.magnitude;
@@ -177,7 +180,7 @@ public class UnityFlock : MonoBehaviour
 
         //Final Velocity to rotate the flock into
 	    velocity = Vector3.RotateTowards(velocity, wantedVel, turnSpeed * Time.deltaTime, 100.00f);
-	    transformComponent.rotation = Quaternion.LookRotation(velocity);
+	   // transformComponent.rotation = Quaternion.LookRotation(velocity);
     	
         //Move the flock based on the calculated velocity
 		transformComponent.Translate(velocity * Time.deltaTime, Space.World);
@@ -197,18 +200,7 @@ public class UnityFlock : MonoBehaviour
 
 		}
 	}
-	void LookAtPlayer()
-	{
-		int damping = 2;
-		
-		//Vector3 lookPos = player.transform.position - GetComponentInParent<Transform>().position;
-		Vector3 lookPos = player.transform.position - transform.parent.position;
-		
-		lookPos.y = 90;
-		Quaternion rotation = Quaternion.LookRotation(lookPos);
-		//GetComponentInParent<Transform>().rotation = Quaternion.Slerp(GetComponentInParent<Transform>().rotation, rotation, Time.deltaTime * damping);
-		transform.parent.rotation = Quaternion.Slerp(transform.parent.rotation, rotation, Time.deltaTime * damping);
-	}
+
 	void Shooting()
 	{
 
