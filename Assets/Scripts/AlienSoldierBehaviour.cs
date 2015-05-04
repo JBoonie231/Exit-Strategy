@@ -120,7 +120,7 @@ public class AlienSoldierBehaviour : MonoBehaviour
 			target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
 		gameController.kills++;
 		gameController.tempKillCount++;
-		GameObject.Destroy(gameObject);
+		GameObject.Destroy(transform.parent.gameObject);
 	}
 	
 	void Standing()
