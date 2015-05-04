@@ -3,13 +3,16 @@ using System.Collections;
 
 public class WeaponBehaviour : MonoBehaviour 
 {
-
+	public bool checkIfLevel2;
 	public GameObject Projectile;
 	GameObject target;
 
 	void Awake ()
 	{
-		target = GameObject.FindGameObjectWithTag("Target");
+		if(checkIfLevel2 == true)
+			target = GameObject.FindGameObjectWithTag("Target");
+		else
+			target = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	void Update ()
