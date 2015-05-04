@@ -28,8 +28,21 @@ public class UnityFlock : MonoBehaviour
     private UnityFlock[] otherFlocks;       //Unity Flocks in the group
     private Transform transformComponent;   //My transform
 
+	bool waiting;
+	float waitTime;
+	int shotsTaken;
+
+	GameController gameController;
+	//public GameObject target;
+	public GameObject weapon;
+	public int numberOfShots;
+	public float timeBetweenShots;
+	public float health = 3f;
+	GameObject player;
     void Start ()
     {
+		player = GameObject.FindGameObjectWithTag("Player");
+		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         randomFreq = 1.0f / randomFreq;
 
         //Assign the parent as origin
@@ -75,6 +88,7 @@ public class UnityFlock : MonoBehaviour
 
     void Update ()
     { 
+		Shooting ();
         //Internal variables
 	    float speed= velocity.magnitude;
         Vector3 avgVelocity = Vector3.zero;
@@ -170,5 +184,54 @@ public class UnityFlock : MonoBehaviour
 
         //normalise the velocity
         normalizedVelocity = velocity.normalized;
+
     }
+	
+	public void TakeDamage(float amount)
+	{
+		health -= amount;
+		
+		if(health <= 0)
+		{
+			health = 0;
+
+		}
+	}
+	void LookAtPlayer()
+	{
+		int damping = 2;
+		
+		//Vector3 lookPos = player.transform.position - GetComponentInParent<Transform>().position;
+		Vector3 lookPos = player.transform.position - transform.parent.position;
+		
+		lookPos.y = 90;
+		Quaternion rotation = Quaternion.LookRotation(lookPos);
+		//GetComponentInParent<Transform>().rotation = Quaternion.Slerp(GetComponentInParent<Transform>().rotation, rotation, Time.deltaTime * damping);
+		transform.parent.rotation = Quaternion.Slerp(transform.parent.rotation, rotation, Time.deltaTime * damping);
+	}
+	void Shooting()
+	{
+
+		if(numberOfShots > shotsTaken)
+		{
+			if(!waiting)
+			{
+				waiting = true;
+				waitTime = Time.time + timeBetweenShots;
+			}
+			
+			if(Time.time > waitTime)
+			{
+				waiting = false;
+				shotsTaken++;
+				
+				weapon.GetComponent<WeaponBehaviour>().Fire();
+			}
+		}
+		else
+		{
+			shotsTaken = 0;
+
+		}
+	}
 }

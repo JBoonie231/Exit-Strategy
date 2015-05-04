@@ -24,7 +24,7 @@ public class BulletCollide : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		currentDamage = m9.damage;
-		Debug.Log (currentDamage);
+		//Debug.Log (currentDamage);
 		if (other.gameObject.tag == "environment") 
 		{
 			//needs to leave scorch marks	
@@ -33,6 +33,10 @@ public class BulletCollide : MonoBehaviour
 		if (other.gameObject.tag == "Enemy") 
 		{
 			other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
+		}
+		if (other.gameObject.tag == "Enemy Ship") 
+		{
+			other.gameObject.GetComponent<UnityFlock>().TakeDamage(m9.damage);
 		}
 
 		//no matter what the bullet hits it should be destroyed

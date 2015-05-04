@@ -9,7 +9,7 @@ public class WeaponBehaviour : MonoBehaviour
 
 	void Awake ()
 	{
-		target = GameObject.FindGameObjectWithTag("Player");
+		target = GameObject.FindGameObjectWithTag("Target");
 	}
 	
 	void Update ()

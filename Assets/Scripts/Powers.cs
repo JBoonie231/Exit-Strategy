@@ -51,7 +51,7 @@ public class Powers : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.E)) {
 			if(player.shieldEnable == true){
 				StartCoroutine("enableShield");
-				Debug.Log ("SHIELD ACTIVATED");
+
 
 			}
 		

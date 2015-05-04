@@ -13,6 +13,8 @@ TagManager:
   - Movement Controller
   - m9
   - Enemy Bullet
+  - Enemy Ship
+  - Target
   layers:
   - Default
   - TransparentFX
