@@ -25,17 +25,7 @@ public class UnityFlockController : MonoBehaviour
 
 	void Update(){
 		transform.position = transform.parent.position + transform.forward * distance;
-		if (enemy0 == null) {
-			enemy0 = Instantiate (enemyShip);
-		} else if (enemy1 == null) {
-			enemy1 = Instantiate (enemyShip);
-		} else if (enemy2 == null) {
-			enemy2 = Instantiate (enemyShip);
-		} else if (enemy3 == null) {
-			enemy3 = Instantiate (enemyShip);
-		} else if (enemy4 == null) {
-			enemy4 = Instantiate (enemyShip);
-		}
+
 
 	}
 	/*

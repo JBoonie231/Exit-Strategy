@@ -37,7 +37,8 @@ public class BulletCollide : MonoBehaviour
 		}
 		if (other.gameObject.tag == "Enemy Ship") 
 		{
-			other.gameObject.GetComponent<UnityFlock>().TakeDamage(m9.damage);
+			Debug.Log ("hit ship");
+			other.gameObject.GetComponentInParent<UnityFlock>().TakeDamage(m9.damage);
 		}
 
 		//no matter what the bullet hits it should be destroyed

@@ -196,7 +196,9 @@ public class UnityFlock : MonoBehaviour
 		
 		if(health <= 0)
 		{
-			health = 0;
+			health = 3;
+			transform.position =new Vector3(0,0,0);
+
 
 		}
 	}
