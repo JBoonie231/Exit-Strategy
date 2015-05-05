@@ -124,7 +124,7 @@ GameObject:
   - 4: {fileID: 126074754}
   - 114: {fileID: 126074753}
   m_Layer: 0
-  m_Name: Test Rail 1
+  m_Name: Rail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +150,22 @@ MonoBehaviour:
   - {x: 119.906288, y: 111.641563, z: -313.71936}
   - {x: 208.417038, y: 112.481407, z: -321.78186}
   - {x: 253.781296, y: 199.907181, z: -349.016235}
+  - {x: 299.817902, y: 220.838821, z: -358.586548}
+  - {x: 345.854523, y: 241.770462, z: -368.15686}
+  - {x: 441.059601, y: 223.159622, z: -365.28186}
   - {x: 473.723663, y: 304.34079, z: -396.227173}
-  - {x: 894.444397, y: 489.165009, z: -482.609985}
+  - {x: 517.647522, y: 334.926727, z: -398.024048}
+  - {x: 527.901428, y: 374.993134, z: -415.34436}
+  - {x: 569.433655, y: 380.659882, z: -409.416626}
+  - {x: 601.336975, y: 406.099579, z: -413.81311}
+  - {x: 684.084045, y: 396.752899, z: -439.418579}
+  - {x: 733.975647, y: 361.082977, z: -462.18811}
+  - {x: 802.413147, y: 342.704071, z: -433.016235}
+  - {x: 826.280334, y: 343.454071, z: -431.56311}
+  - {x: 850.147522, y: 344.204071, z: -430.109985}
+  - {x: 867.366272, y: 314.286102, z: -424.65686}
+  - {x: 937.897522, y: 313.930634, z: -369.65686}
+  - {x: 959.585022, y: 256.290009, z: -339.734985}
   looping: 0
 --- !u!4 &126074754
 Transform:
@@ -162,8 +176,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.46000004, y: 2.46000004, z: -1.13999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1242773911}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &134536553
@@ -334,6 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef40534879f69714ab585ce823eee45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkIfLevel2: 0
   Projectile: {fileID: 107162, guid: 2c1e89e18dbeca54d929caad93c896c1, type: 2}
 --- !u!1 &245422421
 GameObject:
@@ -374,6 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef40534879f69714ab585ce823eee45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkIfLevel2: 0
   Projectile: {fileID: 107162, guid: 2c1e89e18dbeca54d929caad93c896c1, type: 2}
 --- !u!1 &305790258
 GameObject:
@@ -414,6 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef40534879f69714ab585ce823eee45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkIfLevel2: 0
   Projectile: {fileID: 107162, guid: 2c1e89e18dbeca54d929caad93c896c1, type: 2}
 --- !u!1 &310310337
 GameObject:
@@ -498,7 +514,7 @@ Transform:
   m_GameObject: {fileID: 414188928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1122766909}
   - {fileID: 2097493789}
@@ -514,7 +530,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: .519999981, z: .25}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: .300000012}
 --- !u!114 &414188931
 MonoBehaviour:
@@ -527,8 +543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a304bdee4ff414a92dd9942fa0798c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 100
+  maxHealth: 100
   lives: 3
   shieldEnable: 1
   shieldOn: 0
@@ -619,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef40534879f69714ab585ce823eee45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkIfLevel2: 0
   Projectile: {fileID: 107162, guid: 2c1e89e18dbeca54d929caad93c896c1, type: 2}
 --- !u!1001 &661218194
 Prefab:
@@ -722,7 +739,7 @@ MonoBehaviour:
   followRadius: 25
   weapon: {fileID: 245422421}
   numberOfShots: 3
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   health: 5
 --- !u!1 &736353388
 GameObject:
@@ -911,7 +928,7 @@ MonoBehaviour:
   followRadius: 25
   weapon: {fileID: 623108222}
   numberOfShots: 3
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   health: 5
 --- !u!1 &808734688 stripped
 GameObject:
@@ -984,6 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef40534879f69714ab585ce823eee45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkIfLevel2: 0
   Projectile: {fileID: 107162, guid: 2c1e89e18dbeca54d929caad93c896c1, type: 2}
 --- !u!1 &1122766908
 GameObject:
@@ -1025,66 +1043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 116d0fc9a40a34a8bbdc83d74e04ee8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1242773910
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1242773911}
-  - 108: {fileID: 1242773912}
-  m_Layer: 0
-  m_Name: Area Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1242773911
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1242773910}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 18.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 126074754}
-  m_RootOrder: 0
---- !u!108 &1242773912
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1242773910}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_Type: 3
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_NormalBias: .400000006
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 2
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1412680036 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 152330, guid: b2dc9b5eed4ad62499fe418b27f8216e, type: 2}
@@ -1382,7 +1340,7 @@ MonoBehaviour:
   followRadius: 25
   weapon: {fileID: 220831074}
   numberOfShots: 3
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   health: 5
 --- !u!1001 &1641138185
 Prefab:
@@ -1510,7 +1468,7 @@ MonoBehaviour:
   followRadius: 25
   weapon: {fileID: 305790258}
   numberOfShots: 3
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   health: 5
 --- !u!1001 &1647924083
 Prefab:
@@ -1638,7 +1596,7 @@ MonoBehaviour:
   followRadius: 25
   weapon: {fileID: 1078678471}
   numberOfShots: 3
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   health: 5
 --- !u!1001 &1682329298
 Prefab:
