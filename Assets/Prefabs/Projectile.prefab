@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Velocity: 15
   SecToDest: 15
-  damage: .5
+  damage: 1
 --- !u!135 &13559714
 SphereCollider:
   m_ObjectHideFlags: 1

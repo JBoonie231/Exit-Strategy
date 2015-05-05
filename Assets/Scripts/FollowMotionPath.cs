@@ -44,14 +44,18 @@ public class FollowMotionPath : MonoBehaviour
 			pause = true;
 			//Debug.Log ("STOP POINT DETECTED");
 
-			gameController.StartSpawners(other.gameObject);
-		}	
-		else if (other.gameObject.tag == "Change Rail") {
-			trigger = other.gameObject.GetComponent<Triggers>();
+			gameController.StartSpawners (other.gameObject);
+		} else if (other.gameObject.tag == "Change Rail") {
+			trigger = other.gameObject.GetComponent<Triggers> ();
 			motionPath = trigger.motionPath;
 			uv = 0;
 			//Debug.Log ("Rail change detected");
+		} else if (other.gameObject.tag == "Level2") {
+			Application.LoadLevel ("SciFi");
+		}else if (other.gameObject.tag == "Level3") {
+			Application.LoadLevel ("Level-2");
 		}
+
 	} 
 }
 	

@@ -15,6 +15,8 @@ TagManager:
   - Enemy Bullet
   - Enemy Ship
   - Target
+  - Level2
+  - Level3
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Title.unity
   - enabled: 1
-    path: Assets/_Scenes/Level-1.unity
+    path: Assets/_Scenes/SciFi.unity
+  - enabled: 1
+    path: Assets/_Scenes/SciFi Level.unity
+  - enabled: 1
+    path: Assets/_Scenes/Level-2.unity
   - enabled: 1
     path: Assets/_Scenes/GameOver.unity

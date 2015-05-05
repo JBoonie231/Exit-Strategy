@@ -12,9 +12,11 @@ Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\
 Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.076 seconds
+- Completed reload, in  0.071 seconds
 desktop: 1920x1080 60Hz; virtual: 5440x1080 at -1600,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -22,952 +24,829 @@ desktop: 1920x1080 60Hz; virtual: 5440x1080 at -1600,0
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Google Drive\School\CS485\Exit-Strategy\Demo_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 27e0 -> priority: 1 
-  Thread -> id: 1e3c -> priority: 1 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.498224 ms
-System memory in use before: 17.2 MB.
-System memory in use after: 17.2 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1711.
-Total: 0.250878 ms (FindLiveObjects: 0.036607 ms CreateObjectMapping: 0.031487 ms MarkObjects: 0.162303 ms  DeleteObjects: 0.019967 ms)
-
-stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
+  Thread -> id: 1e2c -> priority: 1 
+  Thread -> id: 2334 -> priority: 1 
+The referenced script on this Behaviour is missing!
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename:  Line: 1713)
 
-Change Rail
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.884339 ms
 
-1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1766.
+Total: 0.286462 ms (FindLiveObjects: 0.048639 ms CreateObjectMapping: 0.065279 ms MarkObjects: 0.154879 ms  DeleteObjects: 0.017151 ms)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-SHIELD ACTIVATED
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Powers:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\Powers.cs:41)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/Powers.cs Line: 41)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-SHIELD ACTIVATED
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Powers:Update() (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\Powers.cs:41)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/Powers.cs Line: 41)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+stopPoint
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Player Death
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerController:TakeDamage(Single) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\PlayerController.cs:84)
-ProjectileBehaviour:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\ProjectileBehaviour.cs:30)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/PlayerController.cs Line: 84)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
-
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
- 
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Enemy Bullet
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Level2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.694524 ms
+
+Unloading 97 unused Assets to reduce memory usage. Loaded Objects now: 1048.
+Total: 0.603389 ms (FindLiveObjects: 0.115967 ms CreateObjectMapping: 0.019711 ms MarkObjects: 0.297214 ms  DeleteObjects: 0.169471 ms)
 
 stopPoint
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-FollowMotionPath:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\FollowMotionPath.cs:42)
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/FollowMotionPath.cs Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-1.5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BulletCollide:OnTriggerEnter(Collider) (at D:\Google Drive\School\CS485\Exit-Strategy\Assets\Scripts\BulletCollide.cs:27)
+Enemy Bullet
  
-(Filename: D:/Google Drive/School/CS485/Exit-Strategy/Assets/Scripts/BulletCollide.cs Line: 27)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+stopPoint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Enemy Bullet
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
