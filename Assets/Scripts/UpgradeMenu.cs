@@ -7,6 +7,7 @@ public class UpgradeMenu : MonoBehaviour {
 	GameController gameController;
 	PlayerController player;
 	public m9_Fire m9;
+	public Repeater_Fire repeater;
 
 
 	public void theUpgradeMenu()
@@ -14,6 +15,7 @@ public class UpgradeMenu : MonoBehaviour {
 
 		gameController = GetComponent<GameController> ();
 		m9 = gameController.m9;
+		repeater = gameController.repeater;
 		player = gameController.playerController;
 		//m9 = GetComponent<m9_Fire> ();
 		//the menu background box
@@ -135,6 +137,53 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
 			if (m9.ClipSize < 17 && gameController.upgradeCredits > 0) {
 				m9.ClipSize += 1;
+				gameController.upgradeCredits --;
+			}
+		}
+		GUI.EndGroup ();
+		GUI.BeginGroup (new Rect (1340, 380, 200, 200));
+		GUI.Box (new Rect (0, 0, 200, 200), "M9");
+		GUI.Label (new Rect (75, 25, 300, 225), "Damage");
+		GUI.Label (new Rect (95, 55, 300, 225), repeater.damage.ToString ());
+		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
+			if (repeater.damage > 1f) {
+				repeater.damage -= .1f;
+				gameController.upgradeCredits++;
+			} 
+		}
+		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
+			if (repeater.damage < 1.5f && gameController.upgradeCredits > 0) {
+				repeater.damage += .1f;
+				gameController.upgradeCredits --;
+			}
+		}
+		GUI.Label (new Rect (73, 82, 300, 225), "Clip Size");
+		GUI.Label (new Rect (95, 115, 300, 225), repeater.ClipSize.ToString ());
+		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
+			if (repeater.ClipSize > 9) {
+				repeater.ClipSize -= 1;
+				gameController.upgradeCredits++;
+			} 
+			
+		}
+		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
+			if (repeater.ClipSize < 17 && gameController.upgradeCredits > 0) {
+				repeater.ClipSize += 1;
+				gameController.upgradeCredits --;
+			}
+		}
+		GUI.Label (new Rect (73, 112, 300, 225), "Speed");
+		GUI.Label (new Rect (95, 145, 300, 225), repeater.RateOfFire.ToString ());
+		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
+			if (repeater.RateOfFire > 9) {
+				repeater.RateOfFire -= 1;
+				gameController.upgradeCredits++;
+			} 
+			
+		}
+		if (GUI.Button (new Rect (170, 175, 25, 25), "+")) {
+			if (repeater.RateOfFire < 17 && gameController.upgradeCredits > 0) {
+				repeater.RateOfFire += 1;
 				gameController.upgradeCredits --;
 			}
 		}

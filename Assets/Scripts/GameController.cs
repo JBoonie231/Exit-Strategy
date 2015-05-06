@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 	GameObject[] enemies;
 	Powers powers;
 	public m9_Fire m9;
+	public Repeater_Fire repeater;
 	public int upgradeCredits;
 	public int kills;
 	public int tempKillCount;
@@ -29,6 +30,7 @@ public class GameController : MonoBehaviour
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
 		m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
+		repeater = GameObject.FindGameObjectWithTag("repeater").GetComponent<Repeater_Fire> ();
 	}
 	
 	// Update is called once per frame
