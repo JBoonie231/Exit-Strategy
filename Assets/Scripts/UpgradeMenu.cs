@@ -7,7 +7,7 @@ public class UpgradeMenu : MonoBehaviour {
 	GameController gameController;
 	PlayerController player;
 	public m9_Fire m9;
-	public int upgradeCredits =5;
+
 
 	public void theUpgradeMenu()
 	{
@@ -27,13 +27,13 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
 			if (player.shieldDuration > 0) {
 				player.shieldDuration -= 1;
-				upgradeCredits ++;
+				gameController.upgradeCredits ++;
 			}
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
-			if (player.shieldDuration < 10) {
+			if (player.shieldDuration < 10 && gameController.upgradeCredits > 0) {
 				player.shieldDuration += 1;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.Label (new Rect (60, 85, 300, 225), "Effectiveness");
@@ -41,13 +41,13 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
 			if (player.shieldDamage < 1f) {
 				player.shieldDamage += .1f;
-				upgradeCredits ++;
+				gameController.upgradeCredits ++;
 			}
 		}
 		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
-			if (player.shieldDamage > .1f) {
+			if (player.shieldDamage > .1f && gameController.upgradeCredits > 0) {
 				player.shieldDamage -= .1f;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.EndGroup ();
@@ -61,14 +61,14 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
 			if (powers.duration > 0) {
 				powers.duration -= 1f;
-				upgradeCredits ++;
+				gameController.upgradeCredits ++;
 			}
 
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
-			if (powers.duration < 10) {
+			if (powers.duration < 10 && gameController.upgradeCredits > 0) {
 				powers.duration += 1f;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.Label (new Rect (65, 85, 300, 225), "Effectiveness");
@@ -76,13 +76,13 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
 			if (powers.effectiveness > .1f) {
 				powers.effectiveness -= .1f;
-				upgradeCredits ++;
+				gameController.upgradeCredits ++;
 			}
 		}
 		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
-			if (powers.effectiveness <= .7f) {
+			if (powers.effectiveness <= .7f && gameController.upgradeCredits > 0) {
 				powers.effectiveness += .1f;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.EndGroup ();
@@ -92,32 +92,19 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.Label (new Rect (75, 25, 300, 225), "Max Health");
 		GUI.Label (new Rect (95, 52, 300, 225), player.maxHealth.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
-			if (player.maxHealth > 10) {
+			if (player.maxHealth > 100) {
 				player.maxHealth -= 1f;
-				upgradeCredits --;
+				gameController.upgradeCredits ++;
 			}
 			
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
-			if (player.maxHealth < 15) {
+			if (player.maxHealth < 125 && gameController.upgradeCredits > 0) {
 				player.maxHealth += 1f;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
-		GUI.Label (new Rect (75, 85, 300, 225), "Something else?");
-		GUI.Label (new Rect (100, 115, 300, 225), "Something");
-		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
-			if (false) {
 
-				upgradeCredits ++;
-			}
-		}
-		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
-			if (false) {
-
-				upgradeCredits --;
-			}
-		}
 		GUI.EndGroup ();
 
 		GUI.BeginGroup (new Rect (1030, 380, 200, 200));
@@ -127,13 +114,13 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
 			if (m9.damage > 1f) {
 				m9.damage -= .1f;
-				upgradeCredits++;
+				gameController.upgradeCredits++;
 			} 
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
-			if (m9.damage < 1.5f) {
+			if (m9.damage < 1.5f && gameController.upgradeCredits > 0) {
 				m9.damage += .1f;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.Label (new Rect (73, 82, 300, 225), "Clip Size");
@@ -141,14 +128,14 @@ public class UpgradeMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
 			if (m9.ClipSize > 9) {
 				m9.ClipSize -= 1;
-				upgradeCredits++;
+				gameController.upgradeCredits++;
 			} 
 			
 		}
 		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
-			if (m9.ClipSize < 17) {
+			if (m9.ClipSize < 17 && gameController.upgradeCredits > 0) {
 				m9.ClipSize += 1;
-				upgradeCredits --;
+				gameController.upgradeCredits --;
 			}
 		}
 		GUI.EndGroup ();

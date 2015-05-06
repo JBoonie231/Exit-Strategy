@@ -17629,7 +17629,7 @@ GameObject:
   - 65: {fileID: 1202520487}
   m_Layer: 0
   m_Name: Stop Point 14
-  m_TagString: Level2
+  m_TagString: Level3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21586,6 +21586,7 @@ MonoBehaviour:
   playerController: {fileID: 1616769929}
   movementController: {fileID: 591616276}
   m9: {fileID: 1054951252}
+  upgradeCredits: 36
   kills: 0
   tempKillCount: 0
 --- !u!4 &1444887625

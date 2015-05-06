@@ -54,6 +54,8 @@ public class FollowMotionPath : MonoBehaviour
 			Application.LoadLevel ("SciFi");
 		}else if (other.gameObject.tag == "Level3") {
 			Application.LoadLevel ("Level-2");
+		}else if (other.gameObject.tag == "End Game") {
+			Application.LoadLevel ("Win");
 		}
 
 	} 

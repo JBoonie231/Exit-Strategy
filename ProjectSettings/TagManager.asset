@@ -17,6 +17,7 @@ TagManager:
   - Target
   - Level2
   - Level3
+  - End Game
   layers:
   - Default
   - TransparentFX

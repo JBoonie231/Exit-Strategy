@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 	GameObject[] enemies;
 	Powers powers;
 	public m9_Fire m9;
-
+	public int upgradeCredits;
 	public int kills;
 	public int tempKillCount;
 
