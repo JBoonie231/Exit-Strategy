@@ -589,6 +589,8 @@ MonoBehaviour:
   shieldOn: 0
   shieldDamage: 1
   shieldDuration: 0
+  m9: {fileID: 0}
+  Repeater: {fileID: 0}
 --- !u!1 &525475938
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motionPath: {fileID: 126074753}
   startPosition: 0
-  speed: 400
+  speed: 5
   loop: 0
   pause: 0
 --- !u!1001 &767100550
