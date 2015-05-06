@@ -387,6 +387,7 @@ MonoBehaviour:
   - {x: -1.10251999, y: -.626683295, z: 82.3398743}
   - {x: .228849411, y: -.626683295, z: 86.0490417}
   - {x: .409109116, y: -.626683295, z: 88.229599}
+  - {x: .491453171, y: -.626683295, z: 101.135468}
   looping: 0
 --- !u!4 &13153387
 Transform:
@@ -1467,7 +1468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &107781658
 Transform:
   m_ObjectHideFlags: 0
@@ -1508,6 +1509,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 1542671519}
   spawner2: {fileID: 592266649}
   spawner3: {fileID: 0}
@@ -3201,7 +3203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &249257058
 Transform:
   m_ObjectHideFlags: 0
@@ -3242,6 +3244,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 12
+  queen: {fileID: 0}
   spawner1: {fileID: 1890696550}
   spawner2: {fileID: 1813986827}
   spawner3: {fileID: 0}
@@ -4042,7 +4045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &292399502
 Transform:
   m_ObjectHideFlags: 0
@@ -4083,6 +4086,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 1818376145}
   spawner2: {fileID: 1321869678}
   spawner3: {fileID: 0}
@@ -4583,7 +4587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &314313386
 Transform:
   m_ObjectHideFlags: 0
@@ -4624,6 +4628,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 922694891}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -6438,7 +6443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &437288967
 Transform:
   m_ObjectHideFlags: 0
@@ -6479,6 +6484,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 1525134665}
   spawner2: {fileID: 342685052}
   spawner3: {fileID: 0}
@@ -8855,7 +8861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motionPath: {fileID: 13153386}
   startPosition: 0
-  speed: 8
+  speed: 50
   loop: 0
   pause: 0
 --- !u!4 &592266648 stripped
@@ -9572,6 +9578,10 @@ Prefab:
     - target: {fileID: 100050, guid: b2554baa68bed4541bd36080599c1443, type: 3}
       propertyPath: m_TagString
       value: Queen Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: b2554baa68bed4541bd36080599c1443, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2554baa68bed4541bd36080599c1443, type: 3}
@@ -10704,7 +10714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &747180216
 Transform:
   m_ObjectHideFlags: 0
@@ -10745,6 +10755,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 12
+  queen: {fileID: 0}
   spawner1: {fileID: 753204059}
   spawner2: {fileID: 655061155}
   spawner3: {fileID: 770105836}
@@ -12110,7 +12121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &830719844
 Transform:
   m_ObjectHideFlags: 0
@@ -12151,6 +12162,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 1859667148}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -14787,7 +14799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1007410298
 Transform:
   m_ObjectHideFlags: 0
@@ -14828,6 +14840,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 20
+  queen: {fileID: 0}
   spawner1: {fileID: 254536666}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -15739,7 +15752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1080115567
 Transform:
   m_ObjectHideFlags: 0
@@ -15780,6 +15793,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 12
+  queen: {fileID: 0}
   spawner1: {fileID: 603953781}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -15850,7 +15864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1080741052
 Transform:
   m_ObjectHideFlags: 0
@@ -15891,6 +15905,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 12
+  queen: {fileID: 0}
   spawner1: {fileID: 1514177564}
   spawner2: {fileID: 2029266725}
   spawner3: {fileID: 0}
@@ -17243,79 +17258,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1940999640}
   m_RootOrder: 26
---- !u!1 &1170151979
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1170151983}
-  - 33: {fileID: 1170151982}
-  - 65: {fileID: 1170151981}
-  - 23: {fileID: 1170151980}
-  m_Layer: 0
-  m_Name: Level 2 Trigger
-  m_TagString: Level2
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1170151980
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170151979}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &1170151981
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170151979}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1170151982
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170151979}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1170151983
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170151979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.2019997, y: 2, z: -56.987999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
 --- !u!43 &1176026152
 Mesh:
   m_ObjectHideFlags: 0
@@ -17794,7 +17736,7 @@ GameObject:
   - 65: {fileID: 1202520487}
   m_Layer: 0
   m_Name: Stop Point 14
-  m_TagString: Level3
+  m_TagString: stopPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17806,7 +17748,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202520485}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 30.0919991, y: 2.41000009, z: -57.5099983}
+  m_LocalPosition: {x: 30.0900002, y: 2.41000009, z: -55.6699982}
   m_LocalScale: {x: .200000167, y: .200000048, z: .200000122}
   m_Children: []
   m_Father: {fileID: 892409652}
@@ -17839,6 +17781,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 1089728416}
   spawner1: {fileID: 0}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -18573,7 +18516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1238610659
 Transform:
   m_ObjectHideFlags: 0
@@ -18614,6 +18557,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 10
+  queen: {fileID: 0}
   spawner1: {fileID: 1816202675}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -18877,7 +18821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1252578656
 Transform:
   m_ObjectHideFlags: 0
@@ -18918,6 +18862,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 680473348}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -20232,7 +20177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1339389349
 Transform:
   m_ObjectHideFlags: 0
@@ -20273,6 +20218,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 12
+  queen: {fileID: 0}
   spawner1: {fileID: 1262949377}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
@@ -21755,6 +21701,7 @@ MonoBehaviour:
   upgradeCredits: 36
   kills: 0
   tempKillCount: 0
+  gunDamage: 0
 --- !u!4 &1444887625
 Transform:
   m_ObjectHideFlags: 0
@@ -31808,7 +31755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2109688749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31825,6 +31772,7 @@ MonoBehaviour:
   kills: 1
   howLong: 10
   numberOfKills: 8
+  queen: {fileID: 0}
   spawner1: {fileID: 926032652}
   spawner2: {fileID: 2060597287}
   spawner3: {fileID: 0}

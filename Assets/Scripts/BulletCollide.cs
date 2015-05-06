@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BulletCollide : MonoBehaviour 
 {
+	GameController gameController;
 
 	public float Velocity = .5f; 
 	public float SecToDest = 15f;
@@ -16,7 +17,7 @@ public class BulletCollide : MonoBehaviour
 	{
 
 		startTime = Time.time;
-		GameController gameController;
+
 		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 		m9 = gameController.m9;
 	}
@@ -31,15 +32,18 @@ public class BulletCollide : MonoBehaviour
 			//needs to leave scorch marks	
 		}
 
-		if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Queen Head") 
+		if (other.gameObject.tag == "Enemy") 
 		{
-			other.gameObject.transform.root.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
+			other.gameObject.transform.root.GetComponent<AlienSoldierBehaviour>().TakeDamage(gameController.gunDamage);
 			//other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
+		}
+		if(other.gameObject.tag == "Queen Head"){
+			other.gameObject.transform.root.GetComponent<AlienQueenBehaviour>().TakeDamage(gameController.gunDamage);
 		}
 		if (other.gameObject.tag == "Enemy Ship") 
 		{
 			Debug.Log ("hit ship");
-			other.gameObject.GetComponentInParent<UnityFlock>().TakeDamage(m9.damage);
+			other.gameObject.GetComponentInParent<UnityFlock>().TakeDamage(gameController.gunDamage);
 		}
 
 		//no matter what the bullet hits it should be destroyed
@@ -51,6 +55,7 @@ public class BulletCollide : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
 		//move forward
 		this.gameObject.transform.position += Velocity * this.gameObject.transform.forward;
 

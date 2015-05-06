@@ -120,6 +120,7 @@ public class AlienQueenBehaviour : MonoBehaviour
 		gameController.kills++;
 		gameController.tempKillCount++;
 		GameObject.Destroy(transform.gameObject);
+		Application.LoadLevel ("Level 3");
 	}
 
 	void Waiting()

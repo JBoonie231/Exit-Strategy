@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 	public int upgradeCredits;
 	public int kills;
 	public int tempKillCount;
-
+	public float gunDamage;
 	Triggers trigger;
 	float spawnTime;
 
@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
 		Cursor.visible = false;
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerController =player.GetComponent<PlayerController> ();
+
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
 		//m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
@@ -36,7 +37,11 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-
+		if (m9.isActiveAndEnabled) {
+			gunDamage = m9.damage;
+		} else {
+			gunDamage = repeater.damage;
+		}
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
 		if(currentTriggerObject != null)
@@ -82,6 +87,9 @@ public class GameController : MonoBehaviour
 		}
 		if( this.trigger.spawner5 != null){
 			this.trigger.spawner5.enabled = true;
+		}
+		if (this.trigger.queen != null) {
+			this.trigger.queen.gameObject.SetActive(true);
 		}
 
 		tempKillCount = 0;

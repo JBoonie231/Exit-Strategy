@@ -9,7 +9,7 @@ public class Triggers : MonoBehaviour {
 
 	public float howLong;
 	public int numberOfKills;
-
+	public AlienQueenBehaviour queen;
 	public SpawnerBehaviour spawner1;
 	public SpawnerBehaviour spawner2;
 	public SpawnerBehaviour spawner3;
