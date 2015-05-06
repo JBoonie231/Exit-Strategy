@@ -114,6 +114,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &120920140 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 761d933059f5c2448b64cfe52fb61371, type: 3}
+  m_PrefabInternal: {fileID: 1579749858}
 --- !u!1 &126074752
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,8 +594,8 @@ MonoBehaviour:
   shieldOn: 0
   shieldDamage: 1
   shieldDuration: 0
-  m9: {fileID: 0}
-  Repeater: {fileID: 0}
+  m9: {fileID: 1561534586}
+  Repeater: {fileID: 120920140}
 --- !u!1 &525475938
 GameObject:
   m_ObjectHideFlags: 0
