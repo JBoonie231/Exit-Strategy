@@ -9,6 +9,7 @@ public class AlienSoldierBehaviour : MonoBehaviour
 	public float timeBetweenShots;
 	public float health;
 
+	Animator anim;
 	NavMeshAgent agent;
 
 	GameObject player;
@@ -34,10 +35,11 @@ public class AlienSoldierBehaviour : MonoBehaviour
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
 		gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+		anim = GetComponentInChildren<Animator>();
 
 		topState = TopState.Engage;
 		engageState = EngageState.Moving;
-		agent = GetComponentInParent<NavMeshAgent>();
+		agent = GetComponent<NavMeshAgent>();
 		//agent.SetDestination(target.transform.position);
 	}
 	
@@ -116,11 +118,14 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	void Die()
 	{
-		if(target != null)
-			target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
-		gameController.kills++;
-		gameController.tempKillCount++;
-		GameObject.Destroy(transform.parent.gameObject);
+		anim.SetTrigger("Death");
+
+		StartCoroutine(WaitToDie(2f));
+		//if(target != null)
+		//	target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
+		//gameController.kills++;
+		//gameController.tempKillCount++;
+		//GameObject.Destroy(transform.gameObject);
 	}
 	
 	void Standing()
@@ -211,25 +216,30 @@ public class AlienSoldierBehaviour : MonoBehaviour
 
 	void Cover()
 	{
+		anim.SetBool("Crouched", true);
 		LookAtPlayer();
 
 		if(target.GetComponent<EnemyWaypointBehaviour>().cover)
 		{
 			// Get into cover position and wait a certain amount of time
+			anim.SetBool("Crouched", false);
 			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
 		}
 		else
 		{
+			anim.SetBool("Crouched", false);
 			engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
 		}
 	}
 
 	void Moving()
 	{
+		anim.SetBool("Running", true);
 		if(agent.enabled)
 		{
 			if(!agent.pathPending && agent.remainingDistance == 0)
 			{
+				anim.SetBool("Running", false);
 				engageState = (EngageState)Random.Range(0, (int)EngageState.Moving-1);
 			}
 		}
@@ -246,12 +256,12 @@ public class AlienSoldierBehaviour : MonoBehaviour
 		int damping = 2;
 		
 		//Vector3 lookPos = player.transform.position - GetComponentInParent<Transform>().position;
-		Vector3 lookPos = player.transform.position - transform.parent.position;
+		Vector3 lookPos = player.transform.position - transform.position;
 
 		lookPos.y = 90;
 		Quaternion rotation = Quaternion.LookRotation(lookPos);
 		//GetComponentInParent<Transform>().rotation = Quaternion.Slerp(GetComponentInParent<Transform>().rotation, rotation, Time.deltaTime * damping);
-		transform.parent.rotation = Quaternion.Slerp(transform.parent.rotation, rotation, Time.deltaTime * damping);
+		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
 	}
 
 	public void TakeDamage(float amount)
@@ -263,6 +273,16 @@ public class AlienSoldierBehaviour : MonoBehaviour
 			health = 0;
 			topState = TopState.Die;
 		}
+	}
+
+	IEnumerator WaitToDie(float sec)
+	{
+		yield return new WaitForSeconds(sec);
+		if(target != null)
+			target.GetComponent<EnemyWaypointBehaviour>().occupied = false;
+		gameController.kills++;
+		gameController.tempKillCount++;
+		GameObject.Destroy(transform.gameObject);
 	}
 
 	//IEnumerator Wait(float sec)

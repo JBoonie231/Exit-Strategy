@@ -33,7 +33,8 @@ public class BulletCollide : MonoBehaviour
 
 		if (other.gameObject.tag == "Enemy") 
 		{
-			other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
+			other.gameObject.transform.root.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
+			//other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
 		}
 		if (other.gameObject.tag == "Enemy Ship") 
 		{
