@@ -29,8 +29,8 @@ public class GameController : MonoBehaviour
 		playerController =player.GetComponent<PlayerController> ();
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
-		m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
-		repeater = GameObject.FindGameObjectWithTag("repeater").GetComponent<Repeater_Fire> ();
+		//m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
+		//repeater = GameObject.FindGameObjectWithTag("repeater").GetComponent<Repeater_Fire> ();
 	}
 	
 	// Update is called once per frame
@@ -130,7 +130,12 @@ public class GameController : MonoBehaviour
 		}
 	}
 	void OnGUI(){
-		int bulletsLeft = m9.ClipSize - m9.shots;
+		int bulletsLeft;
+		if (m9.isActiveAndEnabled) {
+			 bulletsLeft = m9.ClipSize - m9.shots;
+		} else {
+			 bulletsLeft = repeater.ClipSize - repeater.shots;
+		}
 		//GUI.Label (new Rect (75, 25, 300, 225), "Health ");
 		GUI.Label (new Rect(75, 800, 300, 225), "Health " + playerController.health.ToString());
 		GUI.Label (new Rect(75, 825, 300, 225), "Lives " + playerController.lives.ToString());

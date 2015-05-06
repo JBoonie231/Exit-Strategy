@@ -146,13 +146,13 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.Label (new Rect (75, 25, 300, 225), "Damage");
 		GUI.Label (new Rect (95, 55, 300, 225), repeater.damage.ToString ());
 		if (GUI.Button (new Rect (10, 52, 25, 25), "-")) {
-			if (repeater.damage > 1f) {
+			if (repeater.damage > .5f) {
 				repeater.damage -= .1f;
 				gameController.upgradeCredits++;
 			} 
 		}
 		if (GUI.Button (new Rect (170, 52, 25, 25), "+")) {
-			if (repeater.damage < 1.5f && gameController.upgradeCredits > 0) {
+			if (repeater.damage < 1f && gameController.upgradeCredits > 0) {
 				repeater.damage += .1f;
 				gameController.upgradeCredits --;
 			}
@@ -160,30 +160,30 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.Label (new Rect (73, 82, 300, 225), "Clip Size");
 		GUI.Label (new Rect (95, 115, 300, 225), repeater.ClipSize.ToString ());
 		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
-			if (repeater.ClipSize > 9) {
+			if (repeater.ClipSize > 30) {
 				repeater.ClipSize -= 1;
 				gameController.upgradeCredits++;
 			} 
 			
 		}
 		if (GUI.Button (new Rect (170, 115, 25, 25), "+")) {
-			if (repeater.ClipSize < 17 && gameController.upgradeCredits > 0) {
+			if (repeater.ClipSize < 50 && gameController.upgradeCredits > 0) {
 				repeater.ClipSize += 1;
 				gameController.upgradeCredits --;
 			}
 		}
-		GUI.Label (new Rect (73, 112, 300, 225), "Speed");
-		GUI.Label (new Rect (95, 145, 300, 225), repeater.RateOfFire.ToString ());
-		if (GUI.Button (new Rect (10, 115, 25, 25), "-")) {
-			if (repeater.RateOfFire > 9) {
-				repeater.RateOfFire -= 1;
+		GUI.Label (new Rect (73, 145, 300, 225), "Speed");
+		GUI.Label (new Rect (95, 175, 300, 225), (1-repeater.RateOfFire).ToString ());
+		if (GUI.Button (new Rect (10, 175, 25, 25), "-")) {
+			if (repeater.RateOfFire < .5f) {
+				repeater.RateOfFire += .1f;
 				gameController.upgradeCredits++;
 			} 
 			
 		}
 		if (GUI.Button (new Rect (170, 175, 25, 25), "+")) {
-			if (repeater.RateOfFire < 17 && gameController.upgradeCredits > 0) {
-				repeater.RateOfFire += 1;
+			if (repeater.RateOfFire > .2f && gameController.upgradeCredits > 0) {
+				repeater.RateOfFire -= .1f;
 				gameController.upgradeCredits --;
 			}
 		}

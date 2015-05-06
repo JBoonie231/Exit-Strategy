@@ -18,6 +18,7 @@ TagManager:
   - Level2
   - Level3
   - End Game
+  - repeater
   layers:
   - Default
   - TransparentFX

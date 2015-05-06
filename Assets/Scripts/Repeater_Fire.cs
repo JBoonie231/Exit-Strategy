@@ -7,10 +7,10 @@ public class Repeater_Fire : MonoBehaviour {
 	public AudioClip RFire;
 	public AudioClip Repeater_Reload;
 	public float Volume = 1.0f;
-	public int ClipSize = 40;
+	public int ClipSize = 30;
 	public float ReloadTime = 2.5f;
-	public float damage = 1f;
-	public float RateOfFire = 0.1f;
+	public float damage = .1f;
+	public float RateOfFire = .5f;
 	
 	private AudioSource source;
 	public int shots = 0; 
