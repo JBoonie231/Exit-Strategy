@@ -31,7 +31,7 @@ public class BulletCollide : MonoBehaviour
 			//needs to leave scorch marks	
 		}
 
-		if (other.gameObject.tag == "Enemy") 
+		if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Queen Head") 
 		{
 			other.gameObject.transform.root.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);
 			//other.gameObject.GetComponent<AlienSoldierBehaviour>().TakeDamage(m9.damage);

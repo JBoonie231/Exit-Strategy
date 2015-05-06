@@ -19,6 +19,7 @@ TagManager:
   - Level3
   - End Game
   - repeater
+  - Queen Head
   layers:
   - Default
   - TransparentFX

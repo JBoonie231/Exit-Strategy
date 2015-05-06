@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: b2554baa68bed4541bd36080599c1443
+timeCreated: 1430910814
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Abdomen
+    100002: Abdomen2
+    100004: Abdomen3
+    100006: Abdomen3_end
+    100008: //RootNode
+    100010: Alien Queen_Joined.001
+    100012: Armature
+    100014: ArmIK.L
+    100016: ArmIK.R
+    100018: Elbow.L
+    100020: Elbow.L_end
+    100022: Elbow.R
+    100024: Elbow.R_end
+    100026: Foot.L
+    100028: Foot.R
+    100030: Foot2.L
+    100032: Foot2.R
+    100034: Foot3.L
+    100036: Foot3.R
+    100038: Foot4.L
+    100040: Foot4.R
+    100042: Hand.L
+    100044: Hand.L_end
+    100046: Hand.R
+    100048: Hand.R_end
+    100050: Head
+    100052: Head_end
+    100054: Knee.L
+    100056: Knee.L_end
+    100058: Knee.R
+    100060: Knee.R_end
+    100062: Knee2.L
+    100064: Knee2.L_end
+    100066: Knee2.R
+    100068: Knee2.R_end
+    100070: Knee3.L
+    100072: Knee3.L_end
+    100074: Knee3.R
+    100076: Knee3.R_end
+    100078: Knee4.L
+    100080: Knee4.L_end
+    100082: Knee4.R
+    100084: Knee4.R_end
+    100086: LegIK.L
+    100088: LegIK.R
+    100090: LegIK2.L
+    100092: LegIK2.R
+    100094: LegIK3.L
+    100096: LegIK3.R
+    100098: LegIK4.L
+    100100: LegIK4.R
+    100102: LowArm.L
+    100104: LowArm.L_end
+    100106: LowArm.R
+    100108: LowArm.R_end
+    100110: LowLeg.L
+    100112: LowLeg.L_end
+    100114: LowLeg.R
+    100116: LowLeg.R_end
+    100118: LowLeg2.L
+    100120: LowLeg2.L_end
+    100122: LowLeg2.R
+    100124: LowLeg2.R_end
+    100126: LowLeg3.L
+    100128: LowLeg3.L_end
+    100130: LowLeg3.R
+    100132: LowLeg3.R_end
+    100134: LowLeg4.L
+    100136: LowLeg4.L_end
+    100138: LowLeg4.R
+    100140: LowLeg4.R_end
+    100142: LowThorax
+    100144: Toe.L
+    100146: Toe.L_end
+    100148: Toe.R
+    100150: Toe.R_end
+    100152: Toe2.L
+    100154: Toe2.L_end
+    100156: Toe2.R
+    100158: Toe2.R_end
+    100160: Toe3.L
+    100162: Toe3.L_end
+    100164: Toe3.R
+    100166: Toe3.R_end
+    100168: Toe4.L
+    100170: Toe4.L_end
+    100172: Toe4.R
+    100174: Toe4.R_end
+    100176: UpArm.L
+    100178: UpArm.R
+    100180: UpLeg.L
+    100182: UpLeg.R
+    100184: UpLeg2.L
+    100186: UpLeg2.R
+    100188: UpLeg3.L
+    100190: UpLeg3.R
+    100192: UpLeg4.L
+    100194: UpLeg4.R
+    100196: UpThorax
+    400000: Abdomen
+    400002: Abdomen2
+    400004: Abdomen3
+    400006: Abdomen3_end
+    400008: //RootNode
+    400010: Alien Queen_Joined.001
+    400012: Armature
+    400014: ArmIK.L
+    400016: ArmIK.R
+    400018: Elbow.L
+    400020: Elbow.L_end
+    400022: Elbow.R
+    400024: Elbow.R_end
+    400026: Foot.L
+    400028: Foot.R
+    400030: Foot2.L
+    400032: Foot2.R
+    400034: Foot3.L
+    400036: Foot3.R
+    400038: Foot4.L
+    400040: Foot4.R
+    400042: Hand.L
+    400044: Hand.L_end
+    400046: Hand.R
+    400048: Hand.R_end
+    400050: Head
+    400052: Head_end
+    400054: Knee.L
+    400056: Knee.L_end
+    400058: Knee.R
+    400060: Knee.R_end
+    400062: Knee2.L
+    400064: Knee2.L_end
+    400066: Knee2.R
+    400068: Knee2.R_end
+    400070: Knee3.L
+    400072: Knee3.L_end
+    400074: Knee3.R
+    400076: Knee3.R_end
+    400078: Knee4.L
+    400080: Knee4.L_end
+    400082: Knee4.R
+    400084: Knee4.R_end
+    400086: LegIK.L
+    400088: LegIK.R
+    400090: LegIK2.L
+    400092: LegIK2.R
+    400094: LegIK3.L
+    400096: LegIK3.R
+    400098: LegIK4.L
+    400100: LegIK4.R
+    400102: LowArm.L
+    400104: LowArm.L_end
+    400106: LowArm.R
+    400108: LowArm.R_end
+    400110: LowLeg.L
+    400112: LowLeg.L_end
+    400114: LowLeg.R
+    400116: LowLeg.R_end
+    400118: LowLeg2.L
+    400120: LowLeg2.L_end
+    400122: LowLeg2.R
+    400124: LowLeg2.R_end
+    400126: LowLeg3.L
+    400128: LowLeg3.L_end
+    400130: LowLeg3.R
+    400132: LowLeg3.R_end
+    400134: LowLeg4.L
+    400136: LowLeg4.L_end
+    400138: LowLeg4.R
+    400140: LowLeg4.R_end
+    400142: LowThorax
+    400144: Toe.L
+    400146: Toe.L_end
+    400148: Toe.R
+    400150: Toe.R_end
+    400152: Toe2.L
+    400154: Toe2.L_end
+    400156: Toe2.R
+    400158: Toe2.R_end
+    400160: Toe3.L
+    400162: Toe3.L_end
+    400164: Toe3.R
+    400166: Toe3.R_end
+    400168: Toe4.L
+    400170: Toe4.L_end
+    400172: Toe4.R
+    400174: Toe4.R_end
+    400176: UpArm.L
+    400178: UpArm.R
+    400180: UpLeg.L
+    400182: UpLeg.R
+    400184: UpLeg2.L
+    400186: UpLeg2.R
+    400188: UpLeg3.L
+    400190: UpLeg3.R
+    400192: UpLeg4.L
+    400194: UpLeg4.R
+    400196: UpThorax
+    4300000: Alien Queen_Joined.001
+    7400000: Armature|Attack
+    7400002: Armature|Idle
+    9500000: //RootNode
+    13700000: Alien Queen_Joined.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Attack
+      takeName: Armature|Attack
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien Queen_Joined.001
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ArmIK.L
+        weight: 1
+      - path: Armature/ArmIK.L/Hand.L
+        weight: 1
+      - path: Armature/ArmIK.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/ArmIK.R
+        weight: 1
+      - path: Armature/ArmIK.R/Hand.R
+        weight: 1
+      - path: Armature/ArmIK.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Elbow.L
+        weight: 1
+      - path: Armature/Elbow.L/Elbow.L_end
+        weight: 1
+      - path: Armature/Elbow.R
+        weight: 1
+      - path: Armature/Elbow.R/Elbow.R_end
+        weight: 1
+      - path: Armature/Knee.L
+        weight: 1
+      - path: Armature/Knee.L/Knee.L_end
+        weight: 1
+      - path: Armature/Knee.R
+        weight: 1
+      - path: Armature/Knee.R/Knee.R_end
+        weight: 1
+      - path: Armature/Knee2.L
+        weight: 1
+      - path: Armature/Knee2.L/Knee2.L_end
+        weight: 1
+      - path: Armature/Knee2.R
+        weight: 1
+      - path: Armature/Knee2.R/Knee2.R_end
+        weight: 1
+      - path: Armature/Knee3.L
+        weight: 1
+      - path: Armature/Knee3.L/Knee3.L_end
+        weight: 1
+      - path: Armature/Knee3.R
+        weight: 1
+      - path: Armature/Knee3.R/Knee3.R_end
+        weight: 1
+      - path: Armature/Knee4.L
+        weight: 1
+      - path: Armature/Knee4.L/Knee4.L_end
+        weight: 1
+      - path: Armature/Knee4.R
+        weight: 1
+      - path: Armature/Knee4.R/Knee4.R_end
+        weight: 1
+      - path: Armature/LegIK.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L/Toe.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L/Toe.L/Toe.L_end
+        weight: 1
+      - path: Armature/LegIK.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R/Toe.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R/Toe.R/Toe.R_end
+        weight: 1
+      - path: Armature/LegIK2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L/Toe2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L/Toe2.L/Toe2.L_end
+        weight: 1
+      - path: Armature/LegIK2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R/Toe2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R/Toe2.R/Toe2.R_end
+        weight: 1
+      - path: Armature/LegIK3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L/Toe3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L/Toe3.L/Toe3.L_end
+        weight: 1
+      - path: Armature/LegIK3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R/Toe3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R/Toe3.R/Toe3.R_end
+        weight: 1
+      - path: Armature/LegIK4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L/Toe4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L/Toe4.L/Toe4.L_end
+        weight: 1
+      - path: Armature/LegIK4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R/Toe4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R/Toe4.R/Toe4.R_end
+        weight: 1
+      - path: Armature/UpThorax
+        weight: 1
+      - path: Armature/UpThorax/Head
+        weight: 1
+      - path: Armature/UpThorax/Head/Head_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2/Abdomen3
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2/Abdomen3/Abdomen3_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L/LowLeg2.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L/LowLeg2.L/LowLeg2.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R/LowLeg2.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R/LowLeg2.R/LowLeg2.R_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L/LowLeg3.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L/LowLeg3.L/LowLeg3.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R/LowLeg3.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R/LowLeg3.R/LowLeg3.R_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L/LowLeg4.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L/LowLeg4.L/LowLeg4.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R/LowLeg4.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R/LowLeg4.R/LowLeg4.R_end
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L/LowArm.L
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L/LowArm.L/LowArm.L_end
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R/LowArm.R
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R/LowArm.R/LowArm.R_end
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L/LowLeg.L
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L/LowLeg.L/LowLeg.L_end
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R/LowLeg.R
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R/LowLeg.R/LowLeg.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alien Queen_Joined.001
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/ArmIK.L
+        weight: 1
+      - path: Armature/ArmIK.L/Hand.L
+        weight: 1
+      - path: Armature/ArmIK.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/ArmIK.R
+        weight: 1
+      - path: Armature/ArmIK.R/Hand.R
+        weight: 1
+      - path: Armature/ArmIK.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Elbow.L
+        weight: 1
+      - path: Armature/Elbow.L/Elbow.L_end
+        weight: 1
+      - path: Armature/Elbow.R
+        weight: 1
+      - path: Armature/Elbow.R/Elbow.R_end
+        weight: 1
+      - path: Armature/Knee.L
+        weight: 1
+      - path: Armature/Knee.L/Knee.L_end
+        weight: 1
+      - path: Armature/Knee.R
+        weight: 1
+      - path: Armature/Knee.R/Knee.R_end
+        weight: 1
+      - path: Armature/Knee2.L
+        weight: 1
+      - path: Armature/Knee2.L/Knee2.L_end
+        weight: 1
+      - path: Armature/Knee2.R
+        weight: 1
+      - path: Armature/Knee2.R/Knee2.R_end
+        weight: 1
+      - path: Armature/Knee3.L
+        weight: 1
+      - path: Armature/Knee3.L/Knee3.L_end
+        weight: 1
+      - path: Armature/Knee3.R
+        weight: 1
+      - path: Armature/Knee3.R/Knee3.R_end
+        weight: 1
+      - path: Armature/Knee4.L
+        weight: 1
+      - path: Armature/Knee4.L/Knee4.L_end
+        weight: 1
+      - path: Armature/Knee4.R
+        weight: 1
+      - path: Armature/Knee4.R/Knee4.R_end
+        weight: 1
+      - path: Armature/LegIK.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L/Toe.L
+        weight: 1
+      - path: Armature/LegIK.L/Foot.L/Toe.L/Toe.L_end
+        weight: 1
+      - path: Armature/LegIK.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R/Toe.R
+        weight: 1
+      - path: Armature/LegIK.R/Foot.R/Toe.R/Toe.R_end
+        weight: 1
+      - path: Armature/LegIK2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L/Toe2.L
+        weight: 1
+      - path: Armature/LegIK2.L/Foot2.L/Toe2.L/Toe2.L_end
+        weight: 1
+      - path: Armature/LegIK2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R/Toe2.R
+        weight: 1
+      - path: Armature/LegIK2.R/Foot2.R/Toe2.R/Toe2.R_end
+        weight: 1
+      - path: Armature/LegIK3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L/Toe3.L
+        weight: 1
+      - path: Armature/LegIK3.L/Foot3.L/Toe3.L/Toe3.L_end
+        weight: 1
+      - path: Armature/LegIK3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R/Toe3.R
+        weight: 1
+      - path: Armature/LegIK3.R/Foot3.R/Toe3.R/Toe3.R_end
+        weight: 1
+      - path: Armature/LegIK4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L/Toe4.L
+        weight: 1
+      - path: Armature/LegIK4.L/Foot4.L/Toe4.L/Toe4.L_end
+        weight: 1
+      - path: Armature/LegIK4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R/Toe4.R
+        weight: 1
+      - path: Armature/LegIK4.R/Foot4.R/Toe4.R/Toe4.R_end
+        weight: 1
+      - path: Armature/UpThorax
+        weight: 1
+      - path: Armature/UpThorax/Head
+        weight: 1
+      - path: Armature/UpThorax/Head/Head_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2/Abdomen3
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/Abdomen/Abdomen2/Abdomen3/Abdomen3_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L/LowLeg2.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.L/LowLeg2.L/LowLeg2.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R/LowLeg2.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg2.R/LowLeg2.R/LowLeg2.R_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L/LowLeg3.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.L/LowLeg3.L/LowLeg3.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R/LowLeg3.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg3.R/LowLeg3.R/LowLeg3.R_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L/LowLeg4.L
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.L/LowLeg4.L/LowLeg4.L_end
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R/LowLeg4.R
+        weight: 1
+      - path: Armature/UpThorax/LowThorax/UpLeg4.R/LowLeg4.R/LowLeg4.R_end
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L/LowArm.L
+        weight: 1
+      - path: Armature/UpThorax/UpArm.L/LowArm.L/LowArm.L_end
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R/LowArm.R
+        weight: 1
+      - path: Armature/UpThorax/UpArm.R/LowArm.R/LowArm.R_end
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L/LowLeg.L
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.L/LowLeg.L/LowLeg.L_end
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R/LowLeg.R
+        weight: 1
+      - path: Armature/UpThorax/UpLeg.R/LowLeg.R/LowLeg.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
