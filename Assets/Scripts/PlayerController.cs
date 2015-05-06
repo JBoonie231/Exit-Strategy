@@ -16,12 +16,17 @@ public class PlayerController : MonoBehaviour
 	RaycastHit hit;
 	float range = 50f;
 
+	//for switching weapons
+	public GameObject m9;
+	public GameObject Repeater; 
+
 	// Use this for initialization
 	void Start () 
 	{
 		primaryFire = false;
 		health = maxHealth;
-
+		m9.gameObject.SetActive (true); //to start with the m9 pistol
+		Repeater.gameObject.SetActive (false); //can later switch to repeater
 	}
 	
 	// Update is called once per frame
@@ -38,6 +43,24 @@ public class PlayerController : MonoBehaviour
 		if (primaryFire)
 		{
 			PrimaryFire();
+		}
+
+		if (Input.GetKeyDown ("2")) 
+		{
+			if (m9.gameObject == true) 
+			{
+				m9.gameObject.SetActive (false);
+				Repeater.gameObject.SetActive (true);
+			}
+		}
+		
+		if (Input.GetKeyDown ("1")) {
+			
+			if (Repeater.gameObject == true)
+			{
+				Repeater.gameObject.SetActive (false);
+				m9.gameObject.SetActive (true);
+			}
 		}
 
 	}

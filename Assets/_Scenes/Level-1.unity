@@ -219,6 +219,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1210396590}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &27661376
@@ -644,6 +646,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2041452046}
   - {fileID: 1907981500}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &105899748
@@ -2038,6 +2042,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1844703653}
   - {fileID: 235737516}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!4 &284135594
@@ -2097,6 +2103,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 628114502}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &301927298
@@ -2987,6 +2995,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1179529329}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!4 &371802350
@@ -3045,6 +3055,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 27661376}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &373776277
@@ -3534,6 +3546,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 2045505369}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &428481228
@@ -4214,6 +4228,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 54756861}
   - {fileID: 700979870}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &501315797
@@ -5084,6 +5100,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2010871658}
   - {fileID: 536270155}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &650250536
@@ -6025,6 +6043,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 846819457}
   - {fileID: 1486362270}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 2
 --- !u!1 &729065739
@@ -6680,6 +6700,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1916350318}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &831802085
@@ -7025,6 +7047,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 900941897}
   - {fileID: 401539706}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &860884085
@@ -7216,6 +7240,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 831903123}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &914676647
@@ -7455,6 +7481,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 358168957}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &952934198
@@ -7500,6 +7528,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 142735380}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &973851410
@@ -8912,6 +8942,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1491227639}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1151205954
@@ -10118,6 +10150,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1917565607}
   - {fileID: 57128781}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1266370875
@@ -10547,6 +10581,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 485621366}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1294670681
@@ -10755,6 +10791,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1416292905}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1321820681
@@ -11006,6 +11044,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 629609380}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &1370220811
@@ -12300,6 +12340,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 378830763}
   - {fileID: 593877071}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1534227651
@@ -12420,6 +12462,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 604954515}
   - {fileID: 1197407606}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1540206313
@@ -13369,6 +13413,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 501315797}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1001 &1632340381
@@ -13652,6 +13698,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 2066874259}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1716034706
@@ -13945,6 +13993,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1987568556}
   - {fileID: 463199230}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1770696868
@@ -13990,6 +14040,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1783056760}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1780641837
@@ -14231,6 +14283,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 322490883}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1810287001
@@ -14268,6 +14322,8 @@ MonoBehaviour:
   shieldOn: 0
   shieldDamage: 1
   shieldDuration: 0
+  m9: {fileID: 861908321}
+  Repeater: {fileID: 614082174}
 --- !u!4 &1810287003
 Transform:
   m_ObjectHideFlags: 0
@@ -14610,7 +14666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1843886973
 Transform:
   m_ObjectHideFlags: 0
@@ -14890,6 +14946,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1236908404}
   - {fileID: 430786168}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1916350318
@@ -14981,6 +15039,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2095656390}
   - {fileID: 2016826569}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1917565607
@@ -15072,6 +15132,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 561561665}
   - {fileID: 1844553307}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &1941814714
@@ -15846,6 +15908,8 @@ MonoBehaviour:
   spawnee: {fileID: 172556, guid: 7b0bb1a17d16d6444ab20bb2b48e7deb, type: 2}
   waypoints:
   - {fileID: 1214178822}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!1 &2006409337
@@ -16228,6 +16292,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1032037474}
   - {fileID: 308021512}
+  particles1: {fileID: 0}
+  particles2: {fileID: 0}
   enabled: 0
   cooldown: 5
 --- !u!4 &2044914971
