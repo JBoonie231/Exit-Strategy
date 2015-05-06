@@ -8,6 +8,7 @@ public class UpgradeMenu : MonoBehaviour {
 	PlayerController player;
 	public m9_Fire m9;
 	public int upgradeCredits =5;
+
 	public void theUpgradeMenu()
 	{
 

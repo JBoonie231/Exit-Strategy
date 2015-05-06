@@ -8,7 +8,8 @@ public class SpawnerBehaviour : MonoBehaviour
 	//public int numberOfSpawns;
 	GameObject spawneeClone;
 	GameObject tempWaypoint;
-
+	public GameObject particles1;
+	public GameObject particles2;
 	public bool enabled;
 	public float cooldown;
 
@@ -23,6 +24,14 @@ public class SpawnerBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		if (enabled && particles1 != null && particles2 != null) {
+			particles1.SetActive (true);
+			particles2.SetActive (true);
+		} else if(!enabled && particles1 != null && particles2 != null){
+			particles1.SetActive(false);
+			particles2.SetActive(false);
+		}
+
 		if(enabled && spawnable)
 		{
 			StartCoroutine("Spawn");
@@ -34,7 +43,7 @@ public class SpawnerBehaviour : MonoBehaviour
 	{
 		if(spawnable)
 		{
-				StartCoroutine("Spawn");
+			StartCoroutine("Spawn");
 		}
 	}
 
@@ -47,17 +56,16 @@ public class SpawnerBehaviour : MonoBehaviour
 			{
 				tempWaypoint.GetComponent<EnemyWaypointBehaviour>().occupied = true;
 				spawnable = false;
-
 				spawneeClone = Instantiate(spawnee);
-			
 				spawneeClone.transform.position = transform.position;
 				spawneeClone.transform.rotation = transform.rotation;
 				//spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().tag = "Enemy";
 				spawneeClone.GetComponentInChildren<AlienSoldierBehaviour>().target = tempWaypoint;
-
 				yield return new WaitForSeconds(cooldown);
 				spawnable = true;
 			}
 		}
 	}
+
+
 }
