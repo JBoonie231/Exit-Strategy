@@ -15,10 +15,10 @@ public class LevelChange : MonoBehaviour {
 	}
 
 	public void loadLevel1(){
-		Application.LoadLevel ("SciFi Level");
+		Application.LoadLevel ("Level 1");
 	}
 	public void loadLevel2(){
-		Application.LoadLevel ("SciFi");
+		Application.LoadLevel ("Level 2");
 	}
 	public void loadTitle(){
 		Application.LoadLevel ("Title");

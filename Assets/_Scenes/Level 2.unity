@@ -21586,6 +21586,7 @@ MonoBehaviour:
   playerController: {fileID: 1616769929}
   movementController: {fileID: 591616276}
   m9: {fileID: 1054951252}
+  repeater: {fileID: 0}
   upgradeCredits: 36
   kills: 0
   tempKillCount: 0
@@ -24082,6 +24083,8 @@ MonoBehaviour:
   shieldOn: 0
   shieldDamage: 1
   shieldDuration: 0
+  m9: {fileID: 100000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
+  Repeater: {fileID: 100000, guid: 761d933059f5c2448b64cfe52fb61371, type: 3}
 --- !u!1 &1621820323
 GameObject:
   m_ObjectHideFlags: 0

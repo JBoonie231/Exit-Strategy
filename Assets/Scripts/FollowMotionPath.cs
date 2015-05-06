@@ -51,9 +51,9 @@ public class FollowMotionPath : MonoBehaviour
 			uv = 0;
 			//Debug.Log ("Rail change detected");
 		} else if (other.gameObject.tag == "Level2") {
-			Application.LoadLevel ("SciFi");
+			Application.LoadLevel ("Level 2");
 		}else if (other.gameObject.tag == "Level3") {
-			Application.LoadLevel ("Level-2");
+			Application.LoadLevel ("Level 3");
 		}else if (other.gameObject.tag == "End Game") {
 			Application.LoadLevel ("Win");
 		}
