@@ -1162,7 +1162,7 @@ Transform:
   m_Children:
   - {fileID: 1735748382}
   m_Father: {fileID: 1616769927}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &80788838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7049,7 +7049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
       propertyPath: m_LocalScale.x
@@ -10721,7 +10721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1616769927}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!65 &714344071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15610,8 +15610,9 @@ Transform:
   m_LocalPosition: {x: 0, y: .0870000124, z: .411000013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1815919688}
   - {fileID: 1485179354}
+  - {fileID: 1815919688}
+  - {fileID: 1559597362}
   m_Father: {fileID: 2061426806}
   m_RootOrder: 0
 --- !u!82 &1054951251
@@ -15702,6 +15703,7 @@ MonoBehaviour:
   ReloadTime: 1.29999995
   damage: 1
   shots: 0
+  muzzleLight: {fileID: 1559597361}
 --- !u!1 &1066129355
 GameObject:
   m_ObjectHideFlags: 0
@@ -23540,6 +23542,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1940999640}
   m_RootOrder: 88
+--- !u!1 &1559597361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1559597362}
+  - 108: {fileID: 1559597363}
+  m_Layer: 0
+  m_Name: Muzzle_Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559597362
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559597361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0269994736, y: .00699996948, z: .144001722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1054951250}
+  m_RootOrder: 2
+--- !u!108 &1559597363
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559597361}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3
+  m_Range: 25
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1568013203
 GameObject:
   m_ObjectHideFlags: 0
@@ -24386,8 +24448,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2061426806}
-  - {fileID: 714344070}
   - {fileID: 80788837}
+  - {fileID: 714344070}
   m_Father: {fileID: 310833806}
   m_RootOrder: 0
 --- !u!65 &1616769928
@@ -24422,9 +24484,6 @@ MonoBehaviour:
   shieldDuration: 0
   m9: {fileID: 2061426805}
   Repeater: {fileID: 80788836}
-  M9Equip: {fileID: 0}
-  REquip: {fileID: 0}
-  Volume: 1
 --- !u!1 &1621820323
 GameObject:
   m_ObjectHideFlags: 0
@@ -26979,7 +27038,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1054951250}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!82 &1815919689
 AudioSource:
   m_ObjectHideFlags: 0

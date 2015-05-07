@@ -1183,7 +1183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1885784430}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!82 &130081264
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7640,7 +7640,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f99d5e9f76b4848bc9527aa171809163, type: 3}
       propertyPath: m_LocalScale.x
@@ -11396,6 +11396,66 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.38502502, y: 3.03270936e-05, z: 13.3206358}
   m_Center: {x: -5.34309769, y: -2.2239492e-06, z: -7.72829008}
+--- !u!1 &1539374763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1539374764}
+  - 108: {fileID: 1539374765}
+  m_Layer: 0
+  m_Name: Muzzle_Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539374764
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539374763}
+  m_LocalRotation: {x: 0, y: .695912838, z: 0, w: .718126237}
+  m_LocalPosition: {x: .0573283732, y: .0160005093, z: .146090984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1885784430}
+  m_RootOrder: 2
+--- !u!108 &1539374765
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539374763}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3
+  m_Range: 25
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1539589785
 GameObject:
   m_ObjectHideFlags: 0
@@ -13657,8 +13717,9 @@ Transform:
   m_LocalPosition: {x: 0, y: .0870000124, z: .411000013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 130081263}
   - {fileID: 1054117021}
+  - {fileID: 130081263}
+  - {fileID: 1539374764}
   m_Father: {fileID: 917243098}
   m_RootOrder: 0
 --- !u!114 &1885784431
@@ -13680,6 +13741,7 @@ MonoBehaviour:
   ReloadTime: 1.29999995
   damage: 1
   shots: 0
+  muzzleLight: {fileID: 1539374763}
 --- !u!82 &1885784432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13871,7 +13933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1897486414
 Transform:
   m_ObjectHideFlags: 0

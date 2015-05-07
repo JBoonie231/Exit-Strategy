@@ -15,11 +15,15 @@ public class m9_Fire : MonoBehaviour
 	private AudioSource source;
 	public int shots = 0; 
 	private bool CanFire = true; 
+
+	//for muzzle flash
+	public GameObject muzzleLight;
 	
 	void Awake ()
 	{
 		source = GetComponent<AudioSource> ();
 		CanFire = true; 
+		muzzleLight.gameObject.SetActive (false); 
 	}
 	
 	void Update ()
@@ -55,6 +59,10 @@ public class m9_Fire : MonoBehaviour
 			source.PlayOneShot (M9Fire, Volume);
 			
 			shots = shots + 1;
+
+			muzzleLight.gameObject.SetActive (true);
+			StartCoroutine(LightFlash());
+
 		}
 		
 		if (CanFire == false) 
@@ -73,6 +81,12 @@ public class m9_Fire : MonoBehaviour
 		shots = 0;
 		CanFire = true;
 		
+	}
+
+	IEnumerator LightFlash ()
+	{
+		yield return new WaitForSeconds (0.1f);
+		muzzleLight.gameObject.SetActive (false);
 	}
 	
 }
