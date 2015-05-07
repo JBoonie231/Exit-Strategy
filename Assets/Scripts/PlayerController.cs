@@ -19,11 +19,7 @@ public class PlayerController : MonoBehaviour
 	//for switching weapons
 	public GameObject m9;
 	public GameObject Repeater; 
-	public AudioClip M9Equip;
-	public AudioClip REquip;
-	public float Volume = 1.0f;
 
-	private AudioSource source;
 
 	// Use this for initialization
 	void Start () 
@@ -56,7 +52,6 @@ public class PlayerController : MonoBehaviour
 			{
 				m9.gameObject.SetActive (false);
 				Repeater.gameObject.SetActive (true);
-				Equip_R();
 			}
 		}
 		
@@ -66,7 +61,6 @@ public class PlayerController : MonoBehaviour
 			{
 				Repeater.gameObject.SetActive (false);
 				m9.gameObject.SetActive (true);
-				Equip_M9();
 			}
 		}
 
@@ -114,15 +108,5 @@ public class PlayerController : MonoBehaviour
 			Debug.Log("Player Death");
 		}
 	}
-
-	void Equip_M9()
-	{
-		source.PlayOneShot (M9Equip, Volume);
-	}
-
-	void Equip_R()
-	{
-		source.PlayOneShot (REquip, Volume);
-	}
-
+	
 }
