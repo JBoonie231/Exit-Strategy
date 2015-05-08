@@ -11,7 +11,7 @@ public class Repeater_Fire : MonoBehaviour {
 	public float ReloadTime = 2.5f;
 	public float damage = .1f;
 	public float RateOfFire = .5f;
-	
+	GameObject particles;
 	private AudioSource source;
 	public int shots = 0; 
 	private bool CanFire = true; 
@@ -20,6 +20,8 @@ public class Repeater_Fire : MonoBehaviour {
 	void Awake ()
 	{
 		source = GetComponent<AudioSource> ();
+		particles = GameObject.FindGameObjectWithTag ("Repeater Fire Particle");
+		particles.active = false;
 		CanFire = true; 
 		RateCap = true;
 	}
@@ -32,9 +34,11 @@ public class Repeater_Fire : MonoBehaviour {
 			if ((CanFire)&&(RateCap))
 			{
 				Fire();
+				particles.gameObject.SetActive(true);
 			}
 			
-		}
+		}else
+			particles.active = false;
 		
 		if (Input.GetKeyDown ("r")) 
 		{
@@ -53,7 +57,9 @@ public class Repeater_Fire : MonoBehaviour {
 		}
 		
 		if (CanFire) 
+
 		{
+
 			GameObject clone;
 			clone = Instantiate (Bullet, transform.position, transform.rotation) as GameObject;
 			
