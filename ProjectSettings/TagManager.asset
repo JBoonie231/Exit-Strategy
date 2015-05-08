@@ -20,6 +20,7 @@ TagManager:
   - End Game
   - repeater
   - Queen Head
+  - Repeater Fire Particle
   layers:
   - Default
   - TransparentFX

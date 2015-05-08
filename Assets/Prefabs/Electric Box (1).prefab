@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6599372}
   - 23: {fileID: 2313156}
   m_Layer: 0
-  m_Name: Electric Box
+  m_Name: Electric Box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
