@@ -23,7 +23,7 @@ public class m9_Fire : MonoBehaviour
 	{
 		source = GetComponent<AudioSource> ();
 		CanFire = true; 
-		muzzleLight.gameObject.SetActive (false); 
+		//muzzleLight.gameObject.SetActive (false); 
 		particles = GameObject.FindGameObjectWithTag ("m9 Fire Particle");
 		particles.gameObject.SetActive (false);
 	}
