@@ -21,6 +21,7 @@ TagManager:
   - repeater
   - Queen Head
   - Repeater Fire Particle
+  - m9 Fire Particle
   layers:
   - Default
   - TransparentFX

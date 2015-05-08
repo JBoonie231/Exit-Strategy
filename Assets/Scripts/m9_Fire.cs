@@ -11,7 +11,7 @@ public class m9_Fire : MonoBehaviour
 	public int ClipSize = 9;
 	public float ReloadTime = .3f;
 	public float damage = 1f;
-	
+	GameObject particles;
 	private AudioSource source;
 	public int shots = 0; 
 	private bool CanFire = true; 
@@ -24,6 +24,8 @@ public class m9_Fire : MonoBehaviour
 		source = GetComponent<AudioSource> ();
 		CanFire = true; 
 		muzzleLight.gameObject.SetActive (false); 
+		particles = GameObject.FindGameObjectWithTag ("m9 Fire Particle");
+		particles.gameObject.SetActive (false);
 	}
 	
 	void Update ()
@@ -31,8 +33,12 @@ public class m9_Fire : MonoBehaviour
 		
 		if (Input.GetButtonDown ("Fire1")) 
 		{
-			if (CanFire)
+			if (CanFire){
 				Fire();
+
+			}
+
+
 		}
 		
 		if (Input.GetKeyDown ("r")) 
@@ -53,14 +59,15 @@ public class m9_Fire : MonoBehaviour
 		
 		if (CanFire) 
 		{
+
 			GameObject clone;
 			clone = Instantiate (Bullet, transform.position, transform.rotation) as GameObject;
 			
 			source.PlayOneShot (M9Fire, Volume);
 			
 			shots = shots + 1;
-
-			muzzleLight.gameObject.SetActive (true);
+			particles.gameObject.SetActive(true);
+			//muzzleLight.gameObject.SetActive (true);
 			StartCoroutine(LightFlash());
 
 		}
@@ -86,7 +93,8 @@ public class m9_Fire : MonoBehaviour
 	IEnumerator LightFlash ()
 	{
 		yield return new WaitForSeconds (0.1f);
-		muzzleLight.gameObject.SetActive (false);
+		//muzzleLight.gameObject.SetActive (false);
+		particles.active = false;
 	}
 	
 }
