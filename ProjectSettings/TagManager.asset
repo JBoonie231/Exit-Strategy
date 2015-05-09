@@ -22,6 +22,8 @@ TagManager:
   - Queen Head
   - Repeater Fire Particle
   - m9 Fire Particle
+  - Player Face
+  - Spawn
   layers:
   - Default
   - TransparentFX

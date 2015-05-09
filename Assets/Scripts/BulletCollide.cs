@@ -40,6 +40,10 @@ public class BulletCollide : MonoBehaviour
 		if(other.gameObject.tag == "Queen Head"){
 			other.gameObject.transform.root.GetComponent<AlienQueenBehaviour>().TakeDamage(gameController.gunDamage);
 		}
+		if (other.gameObject.tag == "Spawn") 
+		{
+			other.gameObject.transform.root.GetComponent<AlienSpawnBehaviour>().TakeDamage(gameController.gunDamage);
+		}
 		if (other.gameObject.tag == "Enemy Ship") 
 		{
 			Debug.Log ("hit ship");
