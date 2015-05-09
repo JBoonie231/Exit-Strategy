@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LevelChange : MonoBehaviour {
-
+	//This script to for buttons to call loadLevel functions
 	// Use this for initialization
 	void Start () {
 	

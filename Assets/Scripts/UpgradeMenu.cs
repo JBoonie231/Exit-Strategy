@@ -21,7 +21,7 @@ public class UpgradeMenu : MonoBehaviour {
 		//the menu background box
 
 
-
+		//Create group to upgrade shield
 		GUI.BeginGroup (new Rect (100, 380, 200, 200));
 		GUI.Box (new Rect (0, 0, 200, 200), "Shield");
 		GUI.Label (new Rect (75, 25, 300, 225), "Duration");
@@ -55,7 +55,7 @@ public class UpgradeMenu : MonoBehaviour {
 		GUI.EndGroup ();
 
 
-
+		//Create Group to upgrade Bullet time 
 		GUI.BeginGroup (new Rect (410, 380, 200, 200));
 		GUI.Box (new Rect (0, 0, 200, 200), "Bullet Time");
 		GUI.Label (new Rect (75, 25, 300, 225), "Duration");
@@ -88,7 +88,7 @@ public class UpgradeMenu : MonoBehaviour {
 			}
 		}
 		GUI.EndGroup ();
-
+		//Create group to upgrade player stats
 		GUI.BeginGroup (new Rect (720, 380, 200, 200));
 		GUI.Box (new Rect (0, 0, 200, 200), "Player");
 		GUI.Label (new Rect (75, 25, 300, 225), "Max Health");
@@ -108,7 +108,7 @@ public class UpgradeMenu : MonoBehaviour {
 		}
 
 		GUI.EndGroup ();
-
+		//Create group to upgrade m9
 		GUI.BeginGroup (new Rect (1030, 380, 200, 200));
 		GUI.Box (new Rect (0, 0, 200, 200), "M9");
 		GUI.Label (new Rect (75, 25, 300, 225), "Damage");
@@ -141,6 +141,8 @@ public class UpgradeMenu : MonoBehaviour {
 			}
 		}
 		GUI.EndGroup ();
+
+		//Create group to upgrade repeater
 		GUI.BeginGroup (new Rect (1340, 380, 200, 200));
 		GUI.Box (new Rect (0, 0, 200, 200), "M9");
 		GUI.Label (new Rect (75, 25, 300, 225), "Damage");

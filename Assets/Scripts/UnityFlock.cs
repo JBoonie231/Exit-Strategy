@@ -189,7 +189,7 @@ public class UnityFlock : MonoBehaviour
         normalizedVelocity = velocity.normalized;
 
     }
-	
+	//Alien ship takes damage
 	public void TakeDamage(float amount)
 	{
 		health -= amount;
@@ -202,7 +202,7 @@ public class UnityFlock : MonoBehaviour
 
 		}
 	}
-
+	//Alien ships shooting function
 	void Shooting()
 	{
 

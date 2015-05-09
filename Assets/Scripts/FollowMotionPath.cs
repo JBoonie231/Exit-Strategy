@@ -37,7 +37,8 @@ public class FollowMotionPath : MonoBehaviour
 			transform.forward = speed > 0 ? norm : -norm;
 		}
 	}
-
+	//If an object collides with player, detect type based on tag
+	//and act accordingly
 	void OnTriggerEnter(Collider other){
 		Debug.Log (other.gameObject.tag);
 		if (other.gameObject.tag == "stopPoint") {

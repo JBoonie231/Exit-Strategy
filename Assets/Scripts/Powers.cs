@@ -18,36 +18,36 @@ public class Powers : MonoBehaviour {
 	void Start () {
 		gameController = GetComponent<GameController> ();
 		player = gameController.playerController;
-
-		rend = gameController.Shield.GetComponent<MeshRenderer> ();
+		
+		rend = gameController.Shield.GetComponent<MeshRenderer> ();//Used for shield
 		//rend.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (player.shieldOn == true) {
+		if (player.shieldOn == true) {//If shield is on, show shield object
 			rend.enabled = true;
 		} else {
 			rend.enabled = false;
 		}
 		if (bulletEnable == false) {
-			GUI.Label (new Rect(75, 1000, 300, 225), "Bullet Time Ready");
+			GUI.Label (new Rect(75, 1000, 300, 225), "Bullet Time Ready");//Notify user that bullet time is ready
 		}
-		//Bullet Time
+		//enabled bullet time
 		if (Input.GetKeyDown (KeyCode.F) && bulletEnable == true) {
 			bulletEnable = false;
 			StartCoroutine("startBulletTime");
 		}
-			if (Time.timeScale == convert(effectiveness)) {
+			if (Time.timeScale == convert(effectiveness)) { //Increase counter to expire bullet time
 				bulletTimer += Time.deltaTime;
 			}
-			if (bulletTimer > duration) {
+			if (bulletTimer > duration) {//Bullet time has expired
 				bulletTimer = 0;
 				Time.timeScale = 1f;
 			}
-			//Shield
-		 
+			
+		 //Emable shield
 		if (Input.GetKeyDown (KeyCode.E)) {
 			if(player.shieldEnable == true){
 				StartCoroutine("enableShield");
@@ -57,15 +57,16 @@ public class Powers : MonoBehaviour {
 		
 
 			}
-		if (player.shieldOn == true) {
+		if (player.shieldOn == true) { //Increase counter to expire bullet time
 			shieldTimer += Time.deltaTime;
 		}
-		if (shieldTimer > player.shieldDuration) {
+		if (shieldTimer > player.shieldDuration) { //Shield timer has expired
 			shieldTimer = 0;
 			player.shieldOn = false;
 
 		}
 	}
+	//Set proper timeScale and set cooldown
 	IEnumerator startBulletTime(){
 		if (Time.timeScale == 1.0f) {
 			Time.timeScale = convert(effectiveness);
@@ -75,7 +76,7 @@ public class Powers : MonoBehaviour {
 		yield return new WaitForSeconds(duration + cooldown);
 		bulletEnable = true;
 	}
-
+	//Enable shield and set cooldown
 	IEnumerator enableShield(){
 		player.shieldEnable = false;
 		player.shieldOn = true;
@@ -83,7 +84,7 @@ public class Powers : MonoBehaviour {
 		player.shieldEnable = true;
 
 	}
-
+	//Used to properly display value on upgrade menu
 	float convert(float current){
 		timeScale = 1 - (current);
 		return timeScale;
