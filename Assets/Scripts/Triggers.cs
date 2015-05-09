@@ -2,11 +2,13 @@ using UnityEngine;
 using System.Collections;
 
 public class Triggers : MonoBehaviour {
-	public MotionPath motionPath;
 
+	//Stores spawners and queen to enable when trigger is reached. Also
+	//Sets how many kills or how much time in order to trigger the deactivation
+	//of the spanwers
+	public MotionPath motionPath; //used to switch rails if necessary
 	public bool timer;
 	public bool kills;
-
 	public float howLong;
 	public int numberOfKills;
 	public AlienQueenBehaviour queen;

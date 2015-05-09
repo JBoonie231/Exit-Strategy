@@ -30,13 +30,13 @@ public class GameController : MonoBehaviour
 
 		movementController = GameObject.FindGameObjectWithTag("Movement Controller");
 		powers = gameObject.AddComponent<Powers> ();
-		//m9 = GameObject.FindGameObjectWithTag("m9").GetComponent<m9_Fire> ();
-		//repeater = GameObject.FindGameObjectWithTag("repeater").GetComponent<Repeater_Fire> ();
+	
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		//Switch weapons
 		if (m9.isActiveAndEnabled) {
 			gunDamage = m9.damage;
 		} else {
@@ -48,6 +48,7 @@ public class GameController : MonoBehaviour
 		{
 			TryToStopSpawners();
 		}
+		//Attach pause menu on escape press
 		if(Input.GetKey("escape")) 
 		{
 			Cursor.visible = true;
@@ -62,6 +63,8 @@ public class GameController : MonoBehaviour
 	}
 
 
+	//When a stop point collides with player, activate spawners
+	//that are referenced in the stop point object
 	public void StartSpawners(GameObject trigger)
 	{
 		foreach(GameObject enemy in enemies)
@@ -96,7 +99,7 @@ public class GameController : MonoBehaviour
 		spawnTime = Time.time + this.trigger.howLong;
 		//Destroy (currentTriggerObject);
 	}
-
+	//When the timer runs out or the amount of spawns is reached, deactivate spawners
 	void TryToStopSpawners()
 	{
 		if(trigger.timer && trigger.kills && tempKillCount >= trigger.numberOfKills && spawnTime <= Time.time)
@@ -112,7 +115,7 @@ public class GameController : MonoBehaviour
 			StopSpawners();
 		}
 	}
-
+	//Deactivate spawners, destroy the trigger and resume movement
 	void StopSpawners()
 	{
 		if( trigger.spawner1 != null){
@@ -137,6 +140,8 @@ public class GameController : MonoBehaviour
 			movementController.GetComponent<FollowMotionPath>().pause = false;
 		}
 	}
+	//Generate on screen GUI for health, lives, magazine, and notify user
+	//if shield and bullet time are ready
 	void OnGUI(){
 		int bulletsLeft;
 		if (m9.isActiveAndEnabled) {

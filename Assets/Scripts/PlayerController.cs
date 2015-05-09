@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 		{
 			PrimaryFire();
 		}
-
+		//Enable repeater
 		if (Input.GetKeyDown ("2")) 
 		{
 			if (m9.gameObject == true) 
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 				Repeater.gameObject.SetActive (true);
 			}
 		}
-		
+		//enable pistol
 		if (Input.GetKeyDown ("1")) {
 			
 			if (Repeater.gameObject == true)
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 	}
-
+	//Fire weapon
 	void PrimaryFire ()
 	{
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -79,17 +79,22 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
+	//Destroy enemy after .3f seconds
 	IEnumerator destroyEnemyObject(GameObject gameObject){
 		//Debug.Log ("Delaying object destruction");
 		yield return new WaitForSeconds(.3f);
 		//Debug.Log ("Object Destroyed");
 		Destroy(gameObject);
 	}
+	//Turns camera/head based on ASDF input
 	void TurnHead ()
 	{
 		transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(90f*lookVertical, 90f*lookHorizontal, 0f), 5f);
 	}
 
+	//Decrement health of player when called. If the shield is enabled
+	//The damage is reduced, if the player runs out of health, decrement a life.
+	//If the player has no more lives load game over screen
 	public void TakeDamage(float amount)
 	{
 		if (shieldOn == false) {
